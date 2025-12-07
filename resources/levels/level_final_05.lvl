@@ -1,0 +1,9865 @@
+entity_count:827
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 2.000000
+position: 15212.064453, 29830.625000
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 114.000000
+scale: 8.000000
+position: 16236.294922, 9080.716797
+frame: 0
+spritesheet: 0
+
+
+[player]
+flags: 1
+type: 1
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.100000
+position: 15831.929688, 16338.901367
+frame: 0
+spritesheet: 1
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 314.000000
+scale: 1.000000
+position: 16008.902344, 16470.679688
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 314.000000
+scale: 1.000000
+position: 16886.199219, 17131.984375
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 322.000000
+scale: 2.000000
+position: 17876.199219, 18221.984375
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 340.000000
+scale: 2.000000
+position: 18466.199219, 19651.984375
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 3.000000
+position: 18664.861328, 21064.230469
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 36.000000
+scale: 3.000000
+position: 18466.199219, 22701.984375
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 48.000000
+scale: 4.000000
+position: 17376.199219, 24381.984375
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 210.000000
+scale: 1.000000
+position: 15948.902344, 15960.681641
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 214.000000
+scale: 1.000000
+position: 16288.902344, 15280.681641
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 226.000000
+scale: 2.000000
+position: 16708.902344, 14510.681641
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 240.000000
+scale: 2.000000
+position: 17348.902344, 13780.681641
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 254.000000
+scale: 3.000000
+position: 18298.902344, 13320.681641
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 3.000000
+position: 19818.902344, 13000.681641
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 296.000000
+scale: 4.000000
+position: 22018.902344, 13140.681641
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 298.000000
+scale: 5.000000
+position: 23968.900391, 13820.681641
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 324.000000
+scale: 1.000000
+position: 15538.872070, 16427.455078
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 130.000000
+scale: 2.000000
+position: 11518.872070, 16717.455078
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 130.000000
+scale: 3.000000
+position: 10086.189453, 15842.000000
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 122.000000
+scale: 3.000000
+position: 8656.189453, 14902.000000
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 138.000000
+scale: 4.000000
+position: 6998.903320, 13800.685547
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 170.000000
+scale: 5.000000
+position: 5973.892578, 11941.711914
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 76.000000
+scale: 1.000000
+position: 14618.872070, 16687.455078
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 92.000000
+scale: 2.000000
+position: 13348.872070, 16897.455078
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 154.000000
+scale: 3.000000
+position: 14056.328125, 23887.916016
+frame: 0
+spritesheet: 0
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 15
+size_props: 14
+rotation: 0.000000
+scale: 1.000000
+position: 6456.380371, 9577.160156
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 15
+size_props: 14
+rotation: 0.000000
+scale: 1.000000
+position: 7238.102539, 10113.556641
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 15
+size_props: 14
+rotation: 0.000000
+scale: 1.000000
+position: 6434.950195, 8858.589844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 15
+size_props: 14
+rotation: 0.000000
+scale: 1.000000
+position: 3404.950684, 7948.589844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 15
+size_props: 14
+rotation: 0.000000
+scale: 1.000000
+position: 3144.950684, 8708.589844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 15
+size_props: 14
+rotation: 0.000000
+scale: 1.000000
+position: 4584.950195, 7968.589844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 15
+size_props: 14
+rotation: 0.000000
+scale: 1.000000
+position: 11710.328125, 27276.917969
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 15
+size_props: 14
+rotation: 0.000000
+scale: 1.000000
+position: 16617.767578, 27315.480469
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 15
+size_props: 14
+rotation: 0.000000
+scale: 1.000000
+position: 11097.767578, 28055.480469
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 15
+size_props: 14
+rotation: 0.000000
+scale: 1.000000
+position: 35666.375000, 20602.158203
+frame: 0
+spritesheet: 2
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 238.000000
+scale: 4.000000
+position: 15443.781250, 25931.542969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 7193.018066, 12101.013672
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 11353.785156, 11191.538086
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 2.000000
+position: 12173.785156, 12381.537109
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 14513.010742, 12681.650391
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 14163.010742, 11661.651367
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 4.000000
+position: 16133.785156, 11091.537109
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 2.000000
+position: 15523.010742, 10611.651367
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 8761.571289, 13485.904297
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 11101.571289, 17735.902344
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 13391.571289, 17645.902344
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 16611.570312, 18465.902344
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 17211.570312, 20765.902344
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 2.000000
+position: 14591.571289, 18825.902344
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 15301.571289, 20195.902344
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 2.000000
+position: 12761.571289, 20735.902344
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 16711.570312, 23015.902344
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 14081.571289, 22715.902344
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 15801.572266, 24200.904297
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 14481.570312, 24415.900391
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 4.000000
+position: 8571.570312, 12045.902344
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 15225.191406, 8706.373047
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 9941.569336, 11395.900391
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 2.000000
+position: 10831.569336, 11985.900391
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 2.000000
+position: 10241.569336, 13015.900391
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 10291.569336, 14555.900391
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 18364.416016, 16438.763672
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 3.000000
+position: 21920.128906, 15930.193359
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 20550.128906, 14040.193359
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 22590.128906, 14360.193359
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 2.000000
+position: 19580.128906, 14870.193359
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 18873.785156, 11561.537109
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 2.000000
+position: 17670.128906, 9650.195312
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 19060.128906, 10810.195312
+frame: 0
+spritesheet: 0
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 3
+size_props: 7
+rotation: 0.000000
+scale: 1.000000
+position: 15100.128906, 15740.191406
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 3
+size_props: 7
+rotation: 0.000000
+scale: 1.000000
+position: 15467.978516, 17664.230469
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 3
+size_props: 7
+rotation: 0.000000
+scale: 1.000000
+position: 18007.978516, 15934.230469
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 3
+size_props: 7
+rotation: 0.000000
+scale: 1.000000
+position: 9187.978516, 14754.230469
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 3
+size_props: 7
+rotation: 0.000000
+scale: 1.000000
+position: 17297.978516, 13184.230469
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 3
+size_props: 7
+rotation: 0.000000
+scale: 1.000000
+position: 10427.978516, 11334.228516
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 8
+size_props: 16
+rotation: 0.000000
+scale: 1.000000
+position: 30652.677734, 33610.664062
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 8
+size_props: 16
+rotation: 0.000000
+scale: 1.000000
+position: 11452.679688, 35190.648438
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 3
+size_props: 7
+rotation: 0.000000
+scale: 1.000000
+position: 14518.967773, 20077.398438
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 3
+size_props: 7
+rotation: 0.000000
+scale: 1.000000
+position: 18387.335938, 10566.998047
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 3
+size_props: 7
+rotation: 0.000000
+scale: 1.000000
+position: 13430.632812, 21934.292969
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 3
+size_props: 14
+rotation: 0.000000
+scale: 1.000000
+position: 15150.632812, 23814.292969
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 3
+size_props: 14
+rotation: 0.000000
+scale: 1.000000
+position: 10987.767578, 25545.480469
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 3
+size_props: 7
+rotation: 0.000000
+scale: 1.000000
+position: 12297.766602, 26565.476562
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 3
+size_props: 7
+rotation: 0.000000
+scale: 1.000000
+position: 21410.636719, 14624.308594
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 3
+size_props: 7
+rotation: 0.000000
+scale: 1.000000
+position: 19360.636719, 12154.310547
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 3
+size_props: 14
+rotation: 0.000000
+scale: 1.000000
+position: 21260.066406, 14373.507812
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 15
+size_props: 12
+rotation: 0.000000
+scale: 1.000000
+position: 6660.642578, 8044.322266
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 3
+size_props: 7
+rotation: 0.000000
+scale: 1.000000
+position: 15760.636719, 14394.323242
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 3
+size_props: 7
+rotation: 0.000000
+scale: 1.000000
+position: 11560.637695, 15784.322266
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 3
+size_props: 7
+rotation: 0.000000
+scale: 1.000000
+position: 19200.636719, 13584.323242
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 3
+size_props: 7
+rotation: 0.000000
+scale: 1.000000
+position: 18770.636719, 17854.322266
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 3
+size_props: 7
+rotation: 0.000000
+scale: 1.000000
+position: 17220.636719, 19314.322266
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 3
+size_props: 7
+rotation: 0.000000
+scale: 1.000000
+position: 8530.636719, 12534.324219
+frame: 0
+spritesheet: 2
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 3.000000
+position: 12250.642578, 11404.339844
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 16022.085938, 14110.515625
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 16542.085938, 12700.515625
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 14163.785156, 10811.537109
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 41.000000
+scale: 1.000000
+position: 8676.619141, 9857.798828
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 321.000000
+scale: 1.000000
+position: 10039.477539, 9529.228516
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 204.000000
+scale: 1.000000
+position: 10916.074219, 9869.505859
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 26.000000
+scale: 2.000000
+position: 12116.074219, 9789.505859
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 95.000000
+scale: 1.000000
+position: 13376.073242, 9829.505859
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 218.000000
+scale: 2.000000
+position: 14726.073242, 9989.505859
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 318.000000
+scale: 1.000000
+position: 15756.073242, 10159.505859
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 204.000000
+scale: 2.000000
+position: 17376.074219, 10409.505859
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 159.000000
+scale: 1.000000
+position: 20490.906250, 9906.370117
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 203.000000
+scale: 2.000000
+position: 20376.072266, 11329.505859
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 322.000000
+scale: 1.000000
+position: 21746.072266, 11979.505859
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 225.000000
+scale: 2.000000
+position: 22626.072266, 12439.505859
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 220.000000
+scale: 2.000000
+position: 8418.180664, 9557.450195
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 142.000000
+scale: 1.000000
+position: 9728.181641, 9527.451172
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 24.000000
+scale: 1.000000
+position: 10926.076172, 9369.505859
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 238.000000
+scale: 1.000000
+position: 12015.324219, 9168.880859
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 190.000000
+scale: 2.000000
+position: 14436.619141, 9160.658203
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 266.000000
+scale: 1.000000
+position: 18839.476562, 9434.942383
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 303.000000
+scale: 2.000000
+position: 20153.335938, 9832.998047
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 297.000000
+scale: 1.000000
+position: 21348.048828, 10372.083984
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 162.000000
+scale: 3.000000
+position: 24236.074219, 12509.505859
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 345.000000
+scale: 1.000000
+position: 19797.095703, 25622.324219
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 45.000000
+scale: 1.000000
+position: 21717.095703, 24153.751953
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 332.000000
+scale: 2.000000
+position: 22717.095703, 23345.179688
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 3.000000
+scale: 1.000000
+position: 24282.808594, 20548.039062
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 235.000000
+scale: 2.000000
+position: 25336.074219, 19219.507812
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 221.000000
+scale: 3.000000
+position: 26013.765625, 19061.480469
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 356.000000
+scale: 2.000000
+position: 26263.765625, 17981.480469
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 331.000000
+scale: 2.000000
+position: 26636.074219, 16899.507812
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 298.000000
+scale: 1.000000
+position: 11556.072266, 25129.507812
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 1.000000
+scale: 1.000000
+position: 10666.072266, 23929.507812
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 223.000000
+scale: 2.000000
+position: 9606.072266, 22549.507812
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 242.000000
+scale: 3.000000
+position: 8656.072266, 21539.507812
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 354.000000
+scale: 1.000000
+position: 4879.954102, 20362.333984
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 215.000000
+scale: 1.000000
+position: 4874.239258, 19819.476562
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 139.000000
+scale: 1.000000
+position: 4062.810547, 14599.476562
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 154.000000
+scale: 1.000000
+position: 4139.809570, 15671.921875
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 173.000000
+scale: 1.000000
+position: 4109.809570, 13881.921875
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 320.000000
+scale: 2.000000
+position: 3909.809570, 14231.921875
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 91.000000
+scale: 1.000000
+position: 4288.524414, 12573.761719
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 244.000000
+scale: 2.000000
+position: 9233.333984, 25052.998047
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 134.000000
+scale: 2.000000
+position: 8796.072266, 24379.505859
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 267.000000
+scale: 1.000000
+position: 7662.809570, 23628.044922
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 241.000000
+scale: 1.000000
+position: 5205.667969, 19588.046875
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 138.000000
+scale: 2.000000
+position: 4189.809570, 16081.921875
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 178.000000
+scale: 1.000000
+position: 27259.480469, 17969.224609
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 234.000000
+scale: 2.000000
+position: 24686.070312, 16619.507812
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 282.000000
+scale: 2.000000
+position: 24013.765625, 20281.478516
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 42.000000
+scale: 1.000000
+position: 24866.251953, 19412.431641
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 136.000000
+scale: 3.000000
+position: 22163.765625, 23921.472656
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 39.000000
+scale: 2.000000
+position: 21363.765625, 25101.472656
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 188.000000
+scale: 2.000000
+position: 19783.765625, 26001.472656
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 325.000000
+scale: 1.000000
+position: 23496.623047, 11663.511719
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 91.000000
+scale: 2.000000
+position: 20793.335938, 10352.998047
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 59.000000
+scale: 1.000000
+position: 19850.906250, 9612.084961
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 209.000000
+scale: 2.000000
+position: 19273.335938, 9842.998047
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 18165.191406, 9317.800781
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 66.000000
+scale: 1.000000
+position: 8916.068359, 9729.508789
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 157.000000
+scale: 2.000000
+position: 9298.181641, 9527.451172
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 248.000000
+scale: 2.000000
+position: 9928.181641, 9147.451172
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 336.000000
+scale: 2.000000
+position: 10416.067383, 9429.508789
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 154.000000
+scale: 2.000000
+position: 11135.324219, 8978.880859
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 164.000000
+scale: 1.000000
+position: 11436.620117, 9206.372070
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 298.000000
+scale: 1.000000
+position: 11859.477539, 8983.515625
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 296.000000
+scale: 2.000000
+position: 12802.466797, 9081.738281
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 282.000000
+scale: 2.000000
+position: 12285.324219, 8838.880859
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 354.000000
+scale: 2.000000
+position: 13341.038086, 8866.023438
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 164.000000
+scale: 2.100000
+position: 13878.180664, 9006.023438
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 286.000000
+scale: 2.000000
+position: 14956.067383, 8979.508789
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 215.000000
+scale: 1.000000
+position: 18030.906250, 9540.657227
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 323.000000
+scale: 2.000000
+position: 18523.335938, 9272.998047
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 357.000000
+scale: 1.000000
+position: 24756.066406, 15999.507812
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 189.000000
+scale: 1.000000
+position: 24826.066406, 17459.507812
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 120.000000
+scale: 3.000000
+position: 24626.066406, 19839.507812
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 37.000000
+scale: 2.000000
+position: 23143.765625, 22881.476562
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 128.000000
+scale: 1.000000
+position: 22774.238281, 22965.179688
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 159.000000
+scale: 1.000000
+position: 22342.810547, 23448.037109
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 188.000000
+scale: 2.000000
+position: 21834.238281, 24490.894531
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 166.000000
+scale: 1.000000
+position: 21517.093750, 24722.324219
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 67.000000
+scale: 2.000000
+position: 20973.765625, 25371.472656
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 159.000000
+scale: 1.000000
+position: 20634.238281, 25462.324219
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 340.000000
+scale: 1.000000
+position: 20056.066406, 25569.507812
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 4.000000
+scale: 1.000000
+position: 19422.808594, 25893.753906
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 111.000000
+scale: 2.000000
+position: 19033.765625, 25911.476562
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 325.000000
+scale: 1.000000
+position: 18728.523438, 26119.470703
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 7.000000
+scale: 7.000000
+position: 23760.203125, 21950.429688
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 122.000000
+scale: 1.000000
+position: 26147.847656, 18313.330078
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 193.000000
+scale: 1.000000
+position: 25103.765625, 19591.478516
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 118.000000
+scale: 1.000000
+position: 25266.066406, 16409.507812
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 272.000000
+scale: 1.000000
+position: 25286.066406, 17009.507812
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 158.000000
+scale: 1.000000
+position: 25930.201172, 18440.388672
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 46.000000
+scale: 1.000000
+position: 4319.953125, 19162.330078
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 318.000000
+scale: 1.000000
+position: 5776.068359, 19859.507812
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 58.000000
+scale: 1.000000
+position: 8457.094727, 24210.902344
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 210.000000
+scale: 1.000000
+position: 9017.093750, 24736.615234
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 144.000000
+scale: 3.000000
+position: 9456.068359, 24499.507812
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 332.000000
+scale: 1.000000
+position: 9377.094727, 25410.902344
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 4.000000
+scale: 2.000000
+position: 3409.809570, 12211.921875
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 216.000000
+scale: 1.000000
+position: 2408.524414, 11568.047852
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 129.000000
+scale: 3.000000
+position: 1946.067383, 11449.501953
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 141.000000
+scale: 1.000000
+position: 1691.381592, 11042.333984
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 191.000000
+scale: 2.000000
+position: 1626.067383, 10059.501953
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 59.000000
+scale: 2.000000
+position: 1736.067383, 9199.501953
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 77.000000
+scale: 2.000000
+position: 2056.067383, 8299.501953
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 199.000000
+scale: 1.000000
+position: 2040.573730, 7693.589355
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 21.000000
+scale: 2.000000
+position: 7698.181641, 8137.450195
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 255.000000
+scale: 1.000000
+position: 8088.181641, 8337.450195
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 53.000000
+scale: 2.000000
+position: 7928.181641, 8747.450195
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 315.000000
+scale: 1.000000
+position: 8078.181641, 9237.450195
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 128.000000
+scale: 2.000000
+position: 9002.016602, 25604.267578
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 52.000000
+scale: 1.000000
+position: 8325.666016, 26456.617188
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 334.000000
+scale: 3.000000
+position: 8639.952148, 27128.048828
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 69.000000
+scale: 1.000000
+position: 8445.666016, 27722.333984
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 360.000000
+scale: 2.000000
+position: 8814.237305, 28896.623047
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 55.000000
+scale: 1.000000
+position: 9531.380859, 29808.050781
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 350.000000
+scale: 1.000000
+position: 15922.015625, 29644.267578
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 305.000000
+scale: 3.000000
+position: 16602.015625, 28974.267578
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 268.000000
+scale: 1.000000
+position: 17442.808594, 28416.617188
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 281.000000
+scale: 2.000000
+position: 18502.808594, 28076.615234
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 250.000000
+scale: 1.000000
+position: 18594.236328, 26988.042969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 253.000000
+scale: 3.000000
+position: 18843.765625, 26571.476562
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 309.000000
+scale: 3.000000
+position: 26872.015625, 17654.273438
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 179.000000
+scale: 2.000000
+position: 27542.015625, 17714.273438
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 169.000000
+scale: 1.000000
+position: 29505.195312, 17434.939453
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 83.000000
+scale: 1.000000
+position: 30105.195312, 16666.367188
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 242.000000
+scale: 2.000000
+position: 30868.052734, 15674.938477
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 180.000000
+scale: 1.000000
+position: 30643.763672, 15371.486328
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 331.000000
+scale: 1.000000
+position: 28668.054688, 11689.223633
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 345.000000
+scale: 1.000000
+position: 27576.625000, 11323.509766
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 264.000000
+scale: 1.000000
+position: 26250.908203, 11152.081055
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 35.000000
+scale: 2.000000
+position: 28502.015625, 17604.273438
+frame: 0
+spritesheet: 0
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 23273.335938, 16845.093750
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 23763.335938, 17395.093750
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 23623.335938, 18315.093750
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 22453.335938, 18245.093750
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 20193.335938, 19235.091797
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 22493.335938, 19445.091797
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 23183.335938, 19975.091797
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 22013.335938, 20825.091797
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 19973.335938, 20725.091797
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 20313.335938, 21345.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 21143.335938, 21805.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 21103.335938, 22845.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 19703.335938, 23615.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 18893.335938, 24225.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 25953.335938, 13755.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 25833.335938, 12875.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 26343.335938, 12235.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 27843.335938, 12385.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 27416.066406, 12824.616211
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 29753.335938, 15545.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 29013.335938, 16385.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 27843.335938, 16605.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 26353.335938, 16325.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 25793.335938, 16035.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 25813.335938, 15255.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 2
+size_props: 14
+rotation: 0.000000
+scale: 1.000000
+position: 27240.960938, 14903.082031
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 17883.339844, 11345.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 15093.339844, 11225.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 14063.339844, 11075.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 12573.339844, 10675.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 10243.340820, 10735.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 9273.340820, 11145.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 9813.340820, 12645.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 9603.340820, 13375.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 10103.340820, 14215.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 13513.339844, 12295.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 13253.339844, 11605.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 13497.786133, 14365.537109
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 13623.339844, 25535.085938
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 14863.339844, 26225.085938
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 15953.338867, 26475.085938
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 14873.339844, 27095.085938
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 14923.339844, 28545.085938
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 13913.339844, 29675.083984
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 11813.339844, 29515.083984
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 10033.339844, 28915.083984
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 10133.339844, 27035.085938
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 13283.339844, 23345.085938
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 11313.339844, 22645.085938
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 9803.340820, 20535.087891
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 11923.339844, 19325.087891
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 13133.339844, 18795.087891
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 9423.340820, 19045.087891
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 10223.340820, 17745.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 6563.341309, 17055.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 5643.341797, 15415.088867
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 7703.341309, 15145.088867
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 7223.341309, 16175.088867
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 6333.341309, 14685.089844
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 5533.341309, 13425.089844
+frame: 0
+spritesheet: 2
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 321.000000
+scale: 0.100000
+position: 27894.357422, 14434.648438
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 354.000000
+scale: 0.100000
+position: 27915.437500, 14422.215820
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 85.000000
+scale: 0.100000
+position: 27925.708984, 14399.513672
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 291.000000
+scale: 0.100000
+position: 27879.222656, 14413.027344
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 155.000000
+scale: 0.100000
+position: 27938.140625, 14418.972656
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 206.000000
+scale: 0.100000
+position: 27955.978516, 14431.945312
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 28.000000
+scale: 0.100000
+position: 27969.492188, 14415.729492
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 208.000000
+scale: 0.100000
+position: 27895.978516, 14371.405273
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 218.000000
+scale: 0.100000
+position: 27952.736328, 14372.486328
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 331.000000
+scale: 0.100000
+position: 27900.570312, 14319.654297
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 118.000000
+scale: 0.100000
+position: 27927.976562, 14311.506836
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 302.000000
+scale: 0.100000
+position: 27960.287109, 14302.691406
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 195.000000
+scale: 0.100000
+position: 27974.628906, 14275.708984
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 69.000000
+scale: 0.100000
+position: 27987.603516, 14247.600586
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 107.000000
+scale: 0.100000
+position: 28005.037109, 14265.377930
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 261.000000
+scale: 0.100000
+position: 28011.537109, 14290.377930
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 214.000000
+scale: 0.100000
+position: 28016.537109, 14316.377930
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 58.000000
+scale: 0.100000
+position: 28031.769531, 14340.639648
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 268.000000
+scale: 0.100000
+position: 28036.953125, 14364.343750
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 214.000000
+scale: 0.100000
+position: 28042.880859, 14391.750977
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 187.000000
+scale: 0.100000
+position: 27878.888672, 14301.503906
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 212.000000
+scale: 0.100000
+position: 27864.388672, 14282.503906
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 57.000000
+scale: 0.100000
+position: 27837.412109, 14260.941406
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 82.000000
+scale: 0.100000
+position: 27824.820312, 14284.645508
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 315.000000
+scale: 0.100000
+position: 27823.337891, 14316.497070
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 262.000000
+scale: 0.100000
+position: 27839.634766, 14343.164062
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 118.000000
+scale: 0.100000
+position: 27828.234375, 14372.775391
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 315.000000
+scale: 0.100000
+position: 27811.871094, 14432.775391
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 244.000000
+scale: 0.100000
+position: 27823.687500, 14461.866211
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 156.000000
+scale: 0.100000
+position: 27811.871094, 14400.957031
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 237.000000
+scale: 0.100000
+position: 28051.027344, 14418.416992
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 178.000000
+scale: 0.100000
+position: 13323.075195, 27268.396484
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 239.000000
+scale: 0.100000
+position: 13317.621094, 27298.396484
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 349.000000
+scale: 0.100000
+position: 13308.530273, 27329.304688
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 19.000000
+scale: 0.100000
+position: 13281.257812, 27351.123047
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 198.000000
+scale: 0.100000
+position: 13248.824219, 27370.136719
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 87.000000
+scale: 0.100000
+position: 13302.166016, 27366.578125
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 327.000000
+scale: 0.100000
+position: 13274.893555, 27385.667969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 236.000000
+scale: 0.100000
+position: 13335.802734, 27378.396484
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 271.000000
+scale: 0.100000
+position: 13371.257812, 27377.486328
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 235.000000
+scale: 0.100000
+position: 13468.824219, 27320.724609
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 265.000000
+scale: 0.100000
+position: 13486.470703, 27306.607422
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 77.000000
+scale: 0.100000
+position: 13505.294922, 27296.019531
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 78.000000
+scale: 0.100000
+position: 13530.000000, 27276.019531
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 138.000000
+scale: 0.100000
+position: 13502.166016, 27254.759766
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 78.000000
+scale: 0.100000
+position: 13463.984375, 27260.212891
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 223.000000
+scale: 0.100000
+position: 13442.166016, 27284.759766
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 283.000000
+scale: 0.100000
+position: 13435.802734, 27317.486328
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 35.000000
+scale: 0.100000
+position: 13447.621094, 27344.759766
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 229.000000
+scale: 0.100000
+position: 13465.802734, 27366.578125
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 143.000000
+scale: 0.100000
+position: 13502.166016, 27366.578125
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 104.000000
+scale: 0.100000
+position: 13533.984375, 27358.396484
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 201.000000
+scale: 0.100000
+position: 13560.348633, 27342.031250
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 269.000000
+scale: 0.100000
+position: 13569.439453, 27312.031250
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 49.000000
+scale: 0.100000
+position: 13321.256836, 27477.941406
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 94.000000
+scale: 0.100000
+position: 13317.620117, 27537.941406
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 159.000000
+scale: 0.100000
+position: 13313.075195, 27595.212891
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 51.000000
+scale: 0.100000
+position: 13362.166016, 27498.849609
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 218.000000
+scale: 0.100000
+position: 13359.438477, 27565.212891
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 47.000000
+scale: 0.100000
+position: 13397.620117, 27527.941406
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 291.000000
+scale: 0.100000
+position: 13441.256836, 27495.212891
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 4.000000
+scale: 0.100000
+position: 13439.438477, 27556.123047
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 295.000000
+scale: 0.100000
+position: 13503.075195, 27458.849609
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 141.000000
+scale: 0.100000
+position: 13495.802734, 27568.849609
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 253.000000
+scale: 0.100000
+position: 13543.075195, 27484.304688
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 265.000000
+scale: 0.100000
+position: 13539.438477, 27537.031250
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 130.000000
+scale: 0.100000
+position: 13579.438477, 27507.031250
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 273.000000
+scale: 0.100000
+position: 5117.668945, 9437.614258
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 53.000000
+scale: 0.100000
+position: 5146.001953, 9465.948242
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 165.000000
+scale: 0.100000
+position: 5191.001953, 9499.281250
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 346.000000
+scale: 0.100000
+position: 5227.668945, 9519.281250
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 93.000000
+scale: 0.100000
+position: 5264.335449, 9535.948242
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 42.000000
+scale: 0.100000
+position: 5304.335449, 9557.614258
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 321.000000
+scale: 0.100000
+position: 5347.668945, 9565.948242
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 261.000000
+scale: 0.100000
+position: 5392.668945, 9585.948242
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 168.000000
+scale: 0.100000
+position: 5389.335449, 9644.281250
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 306.000000
+scale: 0.100000
+position: 5417.668945, 9622.614258
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 239.000000
+scale: 0.100000
+position: 5354.335449, 9655.948242
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 147.000000
+scale: 0.100000
+position: 5309.335449, 9655.948242
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 125.000000
+scale: 0.100000
+position: 5264.335449, 9649.281250
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 168.000000
+scale: 0.100000
+position: 5089.335449, 9544.281250
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 95.000000
+scale: 0.100000
+position: 5051.001953, 9514.281250
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 43.000000
+scale: 0.100000
+position: 5024.335449, 9482.614258
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 0.100000
+position: 5066.982422, 9683.875000
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 0.100000
+position: 5116.982422, 9699.329102
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 203.000000
+scale: 0.100000
+position: 5122.668945, 9570.948242
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 32.000000
+scale: 0.100000
+position: 5149.335449, 9594.281250
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 198.000000
+scale: 0.100000
+position: 5186.001953, 9619.281250
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 275.000000
+scale: 0.100000
+position: 5221.001953, 9637.614258
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 0.100000
+position: 5256.001953, 9689.281250
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 329.000000
+scale: 0.100000
+position: 5179.335449, 9715.948242
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 134.000000
+scale: 0.100000
+position: 4952.620117, 9590.005859
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 264.000000
+scale: 0.100000
+position: 4902.668945, 9670.948242
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 39.000000
+scale: 0.100000
+position: 4869.335449, 9640.948242
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 311.000000
+scale: 0.100000
+position: 5232.668945, 9719.281250
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 335.000000
+scale: 0.100000
+position: 4925.347168, 9551.824219
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 292.000000
+scale: 0.100000
+position: 4987.165527, 9630.005859
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 232.000000
+scale: 0.100000
+position: 5024.437988, 9661.824219
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 47.000000
+scale: 0.100000
+position: 5011.001953, 9717.614258
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 146.000000
+scale: 0.100000
+position: 4947.668945, 9699.281250
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 326.000000
+scale: 0.100000
+position: 4851.001953, 9595.948242
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 322.000000
+scale: 0.100000
+position: 4832.668945, 9557.614258
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 135.000000
+scale: 0.100000
+position: 4820.308594, 9492.000977
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 219.000000
+scale: 0.100000
+position: 4842.808594, 9442.000977
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 295.000000
+scale: 0.100000
+position: 4881.001953, 9412.614258
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 169.000000
+scale: 0.100000
+position: 5002.668945, 9347.614258
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 108.000000
+scale: 0.100000
+position: 5006.001953, 9452.614258
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 7.000000
+scale: 0.100000
+position: 5046.001953, 9367.614258
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 44.000000
+scale: 0.100000
+position: 5084.335449, 9402.614258
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 237.000000
+scale: 0.100000
+position: 4452.744141, 9463.230469
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 11.000000
+scale: 0.100000
+position: 4479.803223, 9444.407227
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 315.000000
+scale: 0.100000
+position: 4510.391602, 9451.465820
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 180.000000
+scale: 0.100000
+position: 4535.097656, 9463.230469
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 177.000000
+scale: 0.100000
+position: 4578.317871, 9428.291016
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 312.000000
+scale: 0.100000
+position: 4596.836426, 9408.291016
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 14.000000
+scale: 0.100000
+position: 4621.281250, 9423.105469
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 267.000000
+scale: 0.100000
+position: 4641.281250, 9440.883789
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 127.000000
+scale: 0.100000
+position: 4651.651367, 9463.846680
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 172.000000
+scale: 0.100000
+position: 4640.540039, 9486.068359
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 133.000000
+scale: 0.100000
+position: 4619.058594, 9503.846680
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 279.000000
+scale: 0.100000
+position: 4622.021484, 9529.772461
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 84.000000
+scale: 0.100000
+position: 4569.429199, 9563.846680
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 71.000000
+scale: 0.100000
+position: 4443.333008, 9483.230469
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 167.000000
+scale: 0.100000
+position: 4455.354980, 9503.105469
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 140.000000
+scale: 0.100000
+position: 4478.317871, 9510.513672
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 84.000000
+scale: 0.100000
+position: 4502.021484, 9518.661133
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 21.000000
+scale: 0.100000
+position: 4520.540039, 9534.216797
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 11.000000
+scale: 0.100000
+position: 4504.244141, 9553.476562
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 152.000000
+scale: 0.100000
+position: 4502.021484, 9589.772461
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 155.000000
+scale: 0.100000
+position: 4527.207031, 9592.735352
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 323.000000
+scale: 0.100000
+position: 4556.836426, 9591.253906
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 95.000000
+scale: 0.100000
+position: 4582.762695, 9588.291016
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 222.000000
+scale: 0.100000
+position: 4624.387695, 9581.866211
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 341.000000
+scale: 0.100000
+position: 4654.017090, 9572.236328
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 147.000000
+scale: 0.100000
+position: 4651.054199, 9540.384766
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 0.100000
+position: 4499.058594, 9484.587891
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 147.000000
+scale: 0.100000
+position: 4602.762695, 9471.253906
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 360.000000
+scale: 0.100000
+position: 4590.910645, 9539.402344
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 111.000000
+scale: 0.100000
+position: 4420.222656, 9416.996094
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 92.000000
+scale: 0.100000
+position: 4457.495605, 9395.177734
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 354.000000
+scale: 0.100000
+position: 4498.404785, 9384.268555
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 161.000000
+scale: 0.100000
+position: 4542.041016, 9373.359375
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 334.000000
+scale: 0.100000
+position: 4596.586426, 9371.541992
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 104.000000
+scale: 0.100000
+position: 4635.410156, 9378.601562
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 14.000000
+scale: 0.100000
+position: 4667.207031, 9386.809570
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 164.000000
+scale: 0.100000
+position: 4773.132812, 9396.439453
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 73.000000
+scale: 0.100000
+position: 4724.984375, 9351.995117
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 75.000000
+scale: 0.100000
+position: 4693.132812, 9367.550781
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 334.000000
+scale: 0.100000
+position: 4759.058594, 9366.069336
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 112.000000
+scale: 0.100000
+position: 4762.021484, 9440.883789
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 242.000000
+scale: 0.100000
+position: 4722.021484, 9454.958008
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 242.000000
+scale: 0.100000
+position: 4700.540039, 9485.328125
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 61.000000
+scale: 0.100000
+position: 4393.873535, 9427.550781
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 358.000000
+scale: 0.100000
+position: 4329.429199, 9411.995117
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 150.000000
+scale: 0.100000
+position: 4304.984375, 9440.143555
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 155.000000
+scale: 0.100000
+position: 4302.021484, 9478.662109
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 131.000000
+scale: 0.100000
+position: 4330.169922, 9509.773438
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 191.000000
+scale: 0.100000
+position: 4359.799805, 9521.625000
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 128.000000
+scale: 0.100000
+position: 4387.365234, 9514.678711
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 213.000000
+scale: 0.100000
+position: 4390.535645, 9560.398438
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 150.000000
+scale: 0.100000
+position: 4483.502930, 9567.550781
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 133.000000
+scale: 0.100000
+position: 4559.799316, 9446.068359
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 88.000000
+scale: 0.100000
+position: 4704.590332, 9524.722656
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 191.000000
+scale: 0.100000
+position: 4722.021484, 9563.106445
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 5.000000
+scale: 0.100000
+position: 4392.392090, 9604.586914
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 185.000000
+scale: 0.100000
+position: 4366.466309, 9406.809570
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 83.000000
+scale: 0.100000
+position: 4836.054199, 9401.102539
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 124.000000
+scale: 0.100000
+position: 4967.720703, 9331.102539
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 334.000000
+scale: 0.100000
+position: 4978.666504, 9413.237305
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 74.000000
+scale: 0.100000
+position: 4949.036133, 9375.458008
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 140.000000
+scale: 0.100000
+position: 4931.054199, 9346.102539
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 125.000000
+scale: 0.100000
+position: 4903.529297, 9500.915039
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 254.000000
+scale: 0.100000
+position: 4891.750000, 9458.188477
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 59.000000
+scale: 0.100000
+position: 4894.387695, 9376.102539
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 221.000000
+scale: 0.100000
+position: 4846.054199, 9294.435547
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 103.000000
+scale: 0.100000
+position: 4907.720703, 9267.769531
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 48.000000
+scale: 0.100000
+position: 4872.720703, 9277.769531
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 141.000000
+scale: 0.100000
+position: 4959.387695, 9297.769531
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 284.000000
+scale: 0.100000
+position: 4934.387695, 9274.435547
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 220.000000
+scale: 0.100000
+position: 4822.720703, 9316.102539
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 135.000000
+scale: 0.100000
+position: 4829.387695, 9344.435547
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 90.000000
+scale: 0.100000
+position: 4861.054199, 9364.435547
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 185.000000
+scale: 0.100000
+position: 4891.054199, 9334.435547
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 25.000000
+scale: 2.000000
+position: 2839.809570, 12071.921875
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 315.000000
+scale: 2.000000
+position: 3919.809570, 12491.921875
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 292.000000
+scale: 2.000000
+position: 3939.809570, 13511.921875
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 161.000000
+scale: 2.000000
+position: 4429.809570, 12911.921875
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 107.000000
+scale: 1.000000
+position: 4077.096191, 12999.476562
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 262.000000
+scale: 1.000000
+position: 3948.525146, 14813.762695
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 49.000000
+scale: 2.000000
+position: 4069.809570, 15141.921875
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 206.000000
+scale: 1.000000
+position: 4199.809570, 16461.921875
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 209.000000
+scale: 2.000000
+position: 4109.808594, 16981.923828
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 199.000000
+scale: 1.000000
+position: 3988.524902, 16642.333984
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 296.000000
+scale: 1.000000
+position: 4465.667480, 18905.187500
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 292.000000
+scale: 2.000000
+position: 4709.809570, 19201.919922
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 171.000000
+scale: 1.000000
+position: 4922.810547, 19553.761719
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 115.000000
+scale: 2.000000
+position: 5239.809570, 19951.919922
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 48.000000
+scale: 1.000000
+position: 5142.810547, 20336.619141
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 216.000000
+scale: 1.000000
+position: 4862.062988, 21280.621094
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 5.000000
+scale: 1.000000
+position: 5008.525391, 20999.476562
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 279.000000
+scale: 2.000000
+position: 4759.809570, 20691.919922
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 125.000000
+scale: 2.000000
+position: 7743.333496, 23252.998047
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 117.000000
+scale: 2.000000
+position: 7999.809082, 23801.921875
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 282.000000
+scale: 1.000000
+position: 8165.666016, 24159.472656
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 233.000000
+scale: 1.000000
+position: 1824.491943, 8538.768555
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 349.000000
+scale: 2.000000
+position: 2051.158691, 8833.768555
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 179.000000
+scale: 2.000000
+position: 1699.809570, 7681.924805
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 235.000000
+scale: 1.000000
+position: 1789.809570, 9631.923828
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 2.000000
+scale: 2.000000
+position: 1159.809570, 10541.923828
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 243.000000
+scale: 2.000000
+position: 23882.066406, 11320.617188
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 150.000000
+scale: 3.000000
+position: 25632.066406, 11120.617188
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 175.000000
+scale: 2.000000
+position: 26653.335938, 10832.998047
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 37.000000
+scale: 2.000000
+position: 27023.335938, 11322.998047
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 203.000000
+scale: 2.000000
+position: 27433.335938, 11662.998047
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 187.000000
+scale: 2.000000
+position: 28153.335938, 11312.998047
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 213.000000
+scale: 1.000000
+position: 28450.912109, 11537.794922
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 156.000000
+scale: 2.000000
+position: 29383.763672, 12121.486328
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 269.000000
+scale: 2.000000
+position: 30883.763672, 15011.486328
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 288.000000
+scale: 3.000000
+position: 30503.763672, 16181.486328
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 198.000000
+scale: 2.000000
+position: 30003.763672, 17051.486328
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 263.000000
+scale: 3.000000
+position: 28923.763672, 17041.486328
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 2.000000
+position: 27963.765625, 17941.486328
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 291.000000
+scale: 2.000000
+position: 28803.763672, 12031.486328
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 325.000000
+scale: 3.000000
+position: 28539.480469, 18192.082031
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 121.000000
+scale: 2.000000
+position: 30468.052734, 16794.939453
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 350.000000
+scale: 3.000000
+position: 29173.763672, 17851.486328
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 298.000000
+scale: 2.000000
+position: 29885.195312, 17520.652344
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 170.000000
+scale: 3.000000
+position: 8433.767578, 25951.476562
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 30.000000
+scale: 4.000000
+position: 8322.808594, 28325.191406
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 142.000000
+scale: 3.000000
+position: 8893.767578, 29501.476562
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 172.000000
+scale: 3.000000
+position: 17433.765625, 28901.476562
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 27.000000
+scale: 3.000000
+position: 17893.765625, 28211.476562
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 355.000000
+scale: 3.000000
+position: 18553.765625, 27481.476562
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 330.000000
+scale: 2.000000
+position: 16333.765625, 29571.476562
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 328.000000
+scale: 2.000000
+position: 9222.808594, 30048.050781
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 205.000000
+scale: 2.000000
+position: 8013.768066, 26721.474609
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 55.000000
+scale: 2.000000
+position: 8133.765625, 27501.476562
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 307.000000
+scale: 3.000000
+position: 20403.765625, 25891.472656
+frame: 0
+spritesheet: 0
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 12936.674805, 26627.369141
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 13793.817383, 26547.369141
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 14359.531250, 27030.226562
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 14359.531250, 28081.654297
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 13848.103516, 28313.083984
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 13053.817383, 28224.511719
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 12505.246094, 27681.654297
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 12416.674805, 26987.369141
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 27155.246094, 13960.224609
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 27569.531250, 13571.653320
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 27992.388672, 13740.224609
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 28483.818359, 13883.082031
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 28680.960938, 14285.939453
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 28746.675781, 14537.367188
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 28369.531250, 15171.653320
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 27746.675781, 15154.510742
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 4795.245117, 8667.842773
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 5389.531250, 8673.556641
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 6092.388184, 8719.271484
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 6375.245117, 9127.842773
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 6320.959473, 10270.700195
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 4726.673828, 10664.985352
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 3409.531250, 9519.271484
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 5906.673828, 10773.556641
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 4200.959473, 10619.271484
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 3115.245361, 10284.985352
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 3038.102539, 9127.842773
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 4066.673828, 8524.985352
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 4532.388184, 8556.414062
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 2607.768066, 10255.482422
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 4377.767578, 11525.482422
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 6047.768555, 17955.478516
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 6227.768555, 19485.478516
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 7127.768066, 20755.476562
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 7677.768066, 22065.476562
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 9227.767578, 23365.476562
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 10257.767578, 24145.476562
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 11437.766602, 23705.476562
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 20807.765625, 24025.476562
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 22377.765625, 21915.476562
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 25847.765625, 17455.482422
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 23627.765625, 15475.482422
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 24347.765625, 15045.482422
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 21717.767578, 14045.482422
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 20927.767578, 12075.482422
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 22447.765625, 11705.482422
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 22897.765625, 12115.482422
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 20827.767578, 11105.482422
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 19787.767578, 10655.482422
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 19407.767578, 10635.482422
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 19847.767578, 11475.482422
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 18187.767578, 12035.482422
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 14207.768555, 9645.482422
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 13887.768555, 10165.482422
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 12497.768555, 10115.482422
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 11087.769531, 10105.482422
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 10787.769531, 10395.482422
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 4727.771484, 13925.483398
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 4997.771484, 16155.483398
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 24897.769531, 14195.488281
+frame: 0
+spritesheet: 2
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 80.000000
+scale: 2.000000
+position: 10863.785156, 26321.537109
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 184.000000
+scale: 1.000000
+position: 12683.785156, 25601.537109
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 326.000000
+scale: 1.000000
+position: 10773.785156, 27391.537109
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 321.000000
+scale: 3.000000
+position: 9783.785156, 28061.537109
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 36.000000
+scale: 2.000000
+position: 10933.785156, 29021.537109
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 88.000000
+scale: 1.000000
+position: 12193.785156, 28371.537109
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 118.000000
+scale: 2.000000
+position: 14133.785156, 28891.537109
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 161.000000
+scale: 2.000000
+position: 15673.785156, 28701.537109
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 206.000000
+scale: 1.000000
+position: 15363.785156, 27661.537109
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 123.000000
+scale: 3.000000
+position: 15953.785156, 27061.537109
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 356.000000
+scale: 1.000000
+position: 17243.785156, 26271.537109
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 169.000000
+scale: 1.000000
+position: 14123.786133, 15141.537109
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 220.000000
+scale: 2.000000
+position: 8203.786133, 16861.537109
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 135.000000
+scale: 1.000000
+position: 5803.786621, 16231.538086
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 98.000000
+scale: 1.000000
+position: 5143.786621, 14201.539062
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 291.000000
+scale: 1.000000
+position: 7543.786133, 18081.542969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 157.000000
+scale: 2.000000
+position: 7213.786133, 19431.542969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 52.000000
+scale: 1.000000
+position: 6383.786621, 20271.542969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 234.000000
+scale: 1.000000
+position: 7593.786133, 21301.542969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 32.000000
+scale: 1.000000
+position: 7973.786133, 20301.542969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 217.000000
+scale: 1.000000
+position: 9843.786133, 21201.542969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 152.000000
+scale: 1.000000
+position: 11543.786133, 21461.542969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 22.000000
+scale: 1.000000
+position: 12193.785156, 23031.542969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 73.000000
+scale: 2.000000
+position: 12053.785156, 24281.542969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 181.000000
+scale: 1.000000
+position: 13263.785156, 24631.542969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 114.000000
+scale: 2.000000
+position: 15713.785156, 22551.544922
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 321.000000
+scale: 1.000000
+position: 17393.785156, 21921.544922
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 319.000000
+scale: 2.000000
+position: 6483.785645, 15551.543945
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 141.000000
+scale: 3.000000
+position: 5613.786133, 17301.542969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 223.000000
+scale: 1.000000
+position: 20383.785156, 22571.542969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 352.000000
+scale: 1.000000
+position: 21513.785156, 22171.542969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 251.000000
+scale: 2.000000
+position: 22853.785156, 21101.542969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 196.000000
+scale: 2.000000
+position: 21363.785156, 20181.542969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 334.000000
+scale: 2.000000
+position: 23793.785156, 18841.542969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 2.000000
+position: 20053.785156, 24361.542969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 194.000000
+scale: 2.000000
+position: 19753.785156, 21971.546875
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 21223.785156, 20931.546875
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 2.000000
+scale: 2.000000
+position: 21953.785156, 18841.544922
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 101.000000
+scale: 2.000000
+position: 23063.785156, 17771.544922
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 13.000000
+scale: 1.000000
+position: 23003.785156, 15281.542969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 176.000000
+scale: 1.000000
+position: 26123.785156, 14531.542969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 99.000000
+scale: 1.000000
+position: 27173.785156, 15641.542969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 325.000000
+scale: 2.000000
+position: 28833.785156, 14891.542969
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 13.000000
+scale: 1.000000
+position: 29068.054688, 12292.081055
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 205.000000
+scale: 1.000000
+position: 26152.066406, 11400.617188
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 270.000000
+scale: 1.000000
+position: 14225.191406, 8854.944336
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 89.000000
+scale: 1.000000
+position: 11743.781250, 13841.541016
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 66.000000
+scale: 1.000000
+position: 20423.781250, 17211.541016
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 313.000000
+scale: 2.000000
+position: 1343.788574, 11121.544922
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 295.000000
+scale: 5.000000
+position: 985.667480, 9493.761719
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 328.000000
+scale: 1.000000
+position: 1291.381592, 10179.476562
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 105.000000
+scale: 1.000000
+position: 1434.238770, 10779.476562
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 273.000000
+scale: 1.000000
+position: 2557.095703, 11742.333984
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 3.000000
+scale: 1.000000
+position: 2514.238770, 11979.476562
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 305.000000
+scale: 1.000000
+position: 3171.381592, 11908.047852
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 1.000000
+scale: 1.000000
+position: 3545.667236, 12516.621094
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 334.000000
+scale: 1.000000
+position: 4262.810059, 13305.191406
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 19.000000
+scale: 1.000000
+position: 4277.096680, 15450.905273
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 331.000000
+scale: 1.000000
+position: 17002.806641, 28725.187500
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 254.000000
+scale: 1.000000
+position: 24437.093750, 20293.751953
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 38.000000
+scale: 1.000000
+position: 30516.625000, 14892.082031
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 338.000000
+scale: 1.000000
+position: 27822.339844, 11423.509766
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 324.000000
+scale: 1.000000
+position: 26673.765625, 11214.937500
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 222.000000
+scale: 1.000000
+position: 26299.482422, 10897.795898
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 17.000000
+scale: 1.000000
+position: 21128.048828, 10523.512695
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 88.000000
+scale: 1.000000
+position: 20502.333984, 10146.370117
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 320.000000
+scale: 1.000000
+position: 19639.476562, 9754.942383
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 105.000000
+scale: 1.000000
+position: 18976.619141, 9643.513672
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 32.000000
+scale: 1.000000
+position: 17279.476562, 9249.228516
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 47.000000
+scale: 1.000000
+position: 17342.333984, 9477.800781
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 299.000000
+scale: 1.000000
+position: 14779.476562, 9283.515625
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 62.000000
+scale: 1.000000
+position: 13505.190430, 9172.085938
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 1.000000
+scale: 1.000000
+position: 12993.762695, 8766.372070
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 110.000000
+scale: 1.000000
+position: 12419.476562, 9186.372070
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 157.000000
+scale: 1.000000
+position: 11645.191406, 9100.658203
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 19.000000
+scale: 1.000000
+position: 10716.620117, 9220.657227
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 268.000000
+scale: 1.000000
+position: 8336.619141, 9197.799805
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 359.000000
+scale: 1.000000
+position: 7833.762207, 9100.657227
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 43.000000
+scale: 1.000000
+position: 8005.190918, 7897.800293
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 104.000000
+scale: 1.000000
+position: 14709.474609, 13959.217773
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 355.000000
+scale: 1.000000
+position: 12919.474609, 15539.216797
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 241.000000
+scale: 1.000000
+position: 12269.474609, 18109.216797
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 95.000000
+scale: 1.000000
+position: 12629.474609, 19279.218750
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 149.000000
+scale: 1.000000
+position: 13729.474609, 19599.218750
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 214.000000
+scale: 1.000000
+position: 15969.474609, 19359.218750
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 92.000000
+scale: 1.000000
+position: 19549.476562, 18179.218750
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 238.000000
+scale: 1.000000
+position: 19649.476562, 16739.218750
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 143.000000
+scale: 1.000000
+position: 20169.476562, 15469.219727
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 176.000000
+scale: 1.000000
+position: 18239.476562, 14979.218750
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 44.000000
+scale: 1.000000
+position: 17239.476562, 11929.218750
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 143.000000
+scale: 1.000000
+position: 15539.476562, 12119.218750
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 215.000000
+scale: 2.000000
+position: 13499.477539, 13369.218750
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 138.000000
+scale: 1.000000
+position: 12219.478516, 14609.218750
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 303.000000
+scale: 1.000000
+position: 9539.478516, 17369.218750
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 147.000000
+scale: 1.000000
+position: 10539.478516, 18459.218750
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 2.000000
+scale: 2.000000
+position: 10639.478516, 19909.218750
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 307.000000
+scale: 1.000000
+position: 11519.478516, 20459.218750
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 60.000000
+scale: 1.000000
+position: 13689.478516, 20959.218750
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 127.000000
+scale: 1.000000
+position: 15179.478516, 21329.218750
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 290.000000
+scale: 1.000000
+position: 14789.478516, 22559.218750
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 214.000000
+scale: 1.000000
+position: 16259.478516, 21109.218750
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 173.000000
+scale: 1.000000
+position: 20849.476562, 19479.218750
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 340.000000
+scale: 3.000000
+position: 21369.476562, 17799.218750
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 319.000000
+scale: 1.000000
+position: 21749.476562, 16789.218750
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 336.000000
+scale: 1.000000
+position: 21109.476562, 15109.216797
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 190.000000
+scale: 1.000000
+position: 27559.476562, 13249.218750
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 123.000000
+scale: 1.000000
+position: 13690.195312, 14460.408203
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 317.000000
+scale: 1.000000
+position: 15220.195312, 13220.408203
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 300.000000
+scale: 1.000000
+position: 18850.195312, 14130.408203
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 212.000000
+scale: 1.000000
+position: 12530.196289, 13030.408203
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 92.000000
+scale: 2.000000
+position: 11320.197266, 12940.408203
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 150.000000
+scale: 1.000000
+position: 11600.197266, 10360.408203
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 227.000000
+scale: 1.000000
+position: 14840.196289, 11810.408203
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 356.000000
+scale: 1.000000
+position: 13160.197266, 10630.408203
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 118.000000
+scale: 1.000000
+position: 17210.195312, 10900.409180
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 60.000000
+scale: 1.000000
+position: 18180.195312, 9730.409180
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 174.000000
+scale: 2.000000
+position: 18310.195312, 11300.409180
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 95.000000
+scale: 2.000000
+position: 19740.195312, 11860.408203
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 274.000000
+scale: 1.000000
+position: 20660.195312, 12720.408203
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 125.000000
+scale: 1.000000
+position: 22980.195312, 12970.408203
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 17.000000
+scale: 1.000000
+position: 24820.193359, 13320.408203
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 152.000000
+scale: 1.000000
+position: 23830.195312, 16590.408203
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 163.000000
+scale: 1.000000
+position: 24360.195312, 17850.406250
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 109.000000
+scale: 1.000000
+position: 25030.195312, 18170.406250
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 227.000000
+scale: 1.000000
+position: 22980.195312, 18980.406250
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 34.000000
+scale: 1.000000
+position: 22420.195312, 20270.406250
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 348.000000
+scale: 1.000000
+position: 21950.195312, 22480.406250
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 133.000000
+scale: 1.000000
+position: 21270.195312, 23760.406250
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 171.000000
+scale: 1.000000
+position: 19510.195312, 24630.402344
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 111.000000
+scale: 1.000000
+position: 18450.195312, 25300.402344
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 248.000000
+scale: 1.000000
+position: 17930.195312, 25770.402344
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 145.000000
+scale: 1.000000
+position: 16870.195312, 25270.402344
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 176.000000
+scale: 1.000000
+position: 8330.197266, 22530.402344
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 160.000000
+scale: 1.000000
+position: 8130.198242, 18610.402344
+frame: 0
+spritesheet: 0
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 12654.197266, 13884.404297
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 15724.197266, 12964.404297
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 17794.197266, 23414.402344
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 16574.197266, 24204.402344
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 14954.197266, 24954.402344
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 16624.197266, 25744.402344
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 12294.198242, 24944.402344
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 6914.199219, 18644.402344
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 11344.199219, 21004.402344
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 10254.199219, 22154.402344
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 8614.199219, 20104.404297
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 5554.199707, 20714.404297
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 6384.199707, 21354.404297
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 5464.199707, 18494.406250
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 4994.199707, 17414.406250
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 8524.198242, 10514.406250
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 23636.066406, 13084.617188
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 20514.195312, 24934.410156
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 17884.195312, 26844.408203
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 16454.195312, 21724.410156
+frame: 0
+spritesheet: 2
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 103.000000
+scale: 2.000000
+position: 13400.195312, 26130.416016
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 215.000000
+scale: 1.000000
+position: 13960.195312, 26690.414062
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 351.000000
+scale: 1.000000
+position: 11980.196289, 27380.414062
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 134.000000
+scale: 1.000000
+position: 11860.196289, 26100.416016
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 158.000000
+scale: 1.000000
+position: 13876.335938, 27537.761719
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 135.000000
+scale: 1.000000
+position: 13080.195312, 28940.414062
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 81.000000
+scale: 1.000000
+position: 27940.195312, 15280.418945
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 310.000000
+scale: 2.000000
+position: 26750.195312, 13760.418945
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 99.000000
+scale: 1.000000
+position: 28830.195312, 13830.418945
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 318.000000
+scale: 1.000000
+position: 6510.199219, 10380.419922
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 92.000000
+scale: 1.000000
+position: 4890.200195, 11000.419922
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 92.000000
+scale: 2.000000
+position: 3620.200439, 10480.419922
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 259.000000
+scale: 1.000000
+position: 2780.200439, 9690.419922
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 182.000000
+scale: 2.000000
+position: 3530.200439, 8550.419922
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 8.000000
+scale: 1.000000
+position: 2850.200439, 8140.419922
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 40.000000
+scale: 1.000000
+position: 5350.200195, 7710.420410
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 38.000000
+scale: 1.000000
+position: 4370.200195, 8330.419922
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 8.000000
+scale: 1.000000
+position: 5580.199219, 8480.419922
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 97.000000
+scale: 2.000000
+position: 7020.199219, 9130.419922
+frame: 0
+spritesheet: 0
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 12724.202148, 28154.417969
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 13464.202148, 28454.416016
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 14254.202148, 27554.417969
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 27094.201172, 14494.422852
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 27474.201172, 15264.422852
+frame: 0
+spritesheet: 2
+
+
+[spawner_fish]
+flags: 1
+type: 2
+rare_props: 0
+size_props: 0
+rotation: 0.000000
+scale: 1.000000
+position: 28494.201172, 13474.422852
+frame: 0
+spritesheet: 2
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 75.000000
+scale: 7.000000
+position: 4070.203125, 18030.423828
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 338.000000
+scale: 1.000000
+position: 23830.203125, 20970.429688
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 358.000000
+scale: 2.000000
+position: 24260.203125, 20960.429688
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 298.000000
+scale: 1.000000
+position: 9603.777344, 9322.337891
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 191.000000
+scale: 1.000000
+position: 26106.671875, 18634.507812
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 39.000000
+scale: 1.000000
+position: 25661.251953, 19397.431641
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 231.000000
+scale: 1.000000
+position: 13652.674805, 27106.226562
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 339.000000
+scale: 1.000000
+position: 13415.531250, 27089.083984
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 4.000000
+scale: 1.000000
+position: 13695.531250, 27737.654297
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 167.000000
+scale: 1.000000
+position: 13458.388672, 27766.226562
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 351.000000
+scale: 1.000000
+position: 13221.246094, 27751.941406
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 91.000000
+scale: 1.000000
+position: 13089.817383, 27543.369141
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 206.000000
+scale: 1.000000
+position: 13784.907227, 27297.761719
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 189.000000
+scale: 1.000000
+position: 13075.531250, 27274.796875
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 45.000000
+scale: 1.000000
+position: 13178.388672, 27054.796875
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 159.000000
+scale: 1.000000
+position: 28045.531250, 14050.510742
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 313.000000
+scale: 1.000000
+position: 28259.818359, 14184.795898
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 124.000000
+scale: 1.000000
+position: 28268.388672, 14436.224609
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 46.000000
+scale: 1.000000
+position: 28091.246094, 14601.939453
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 187.000000
+scale: 1.000000
+position: 27636.960938, 14267.653320
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 239.000000
+scale: 1.000000
+position: 27808.388672, 14081.939453
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 27.000000
+scale: 1.000000
+position: 27656.960938, 14524.795898
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 116.000000
+scale: 1.000000
+position: 27856.960938, 14676.224609
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 331.000000
+scale: 1.000000
+position: 1818.220947, 8027.707031
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 147.000000
+scale: 10.000000
+position: 2672.064941, 6600.621582
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 147.000000
+scale: 6.000000
+position: 4542.064453, 6530.621582
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 348.000000
+scale: 7.000000
+position: 6062.064453, 7010.621582
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 165.000000
+scale: 4.000000
+position: 7262.064453, 7510.621094
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 14.000000
+scale: 10.000000
+position: 6342.062988, 23090.621094
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 195.000000
+scale: 5.000000
+position: 4972.062988, 21980.621094
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 270.000000
+scale: 10.000000
+position: 13222.064453, 30940.625000
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 5.000000
+scale: 6.000000
+position: 10242.064453, 30670.625000
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 347.000000
+scale: 5.000000
+position: 11512.064453, 30940.625000
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 298.000000
+scale: 4.000000
+position: 14792.064453, 30430.625000
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 181.000000
+scale: 2.000000
+position: 15712.064453, 29980.625000
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 186.000000
+scale: 7.000000
+position: 29852.066406, 13030.616211
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 304.000000
+scale: 4.000000
+position: 30312.066406, 14320.615234
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 307.000000
+scale: 6.000000
+position: 22122.066406, 10740.617188
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 28.000000
+scale: 3.000000
+position: 23052.066406, 11270.617188
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 239.000000
+scale: 5.000000
+position: 24732.066406, 11440.617188
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 87.000000
+scale: 1.000000
+position: 23502.066406, 11070.617188
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 353.000000
+scale: 1.000000
+position: 4528.857422, 9231.140625
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 319.000000
+scale: 1.000000
+position: 4755.523926, 9164.473633
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 260.000000
+scale: 1.000000
+position: 4992.190430, 9139.473633
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 263.000000
+scale: 1.000000
+position: 5187.190430, 9301.140625
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 170.000000
+scale: 1.000000
+position: 5385.523926, 9417.807617
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 38.000000
+scale: 1.000000
+position: 5557.190430, 9579.473633
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 13.000000
+scale: 1.000000
+position: 5430.523926, 9789.473633
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 132.000000
+scale: 1.000000
+position: 5195.523926, 9859.473633
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 343.000000
+scale: 1.000000
+position: 4955.523926, 9859.473633
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 100.000000
+scale: 1.000000
+position: 4740.523926, 9717.807617
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 284.000000
+scale: 1.000000
+position: 4517.190430, 9742.807617
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 110.000000
+scale: 1.000000
+position: 4277.190430, 9711.140625
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 103.000000
+scale: 1.000000
+position: 4150.523926, 9499.473633
+frame: 0
+spritesheet: 0
+
+
+[asteroid]
+flags: 1
+type: 0
+rare_props: 0
+size_props: 0
+rotation: 236.000000
+scale: 1.000000
+position: 4290.523926, 9282.807617
+frame: 0
+spritesheet: 0
+
