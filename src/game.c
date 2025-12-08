@@ -35,6 +35,10 @@ void GameInit(Game *game) {
 		.rotation = 0.0f,
 		.zoom = 1.0f
 	};
+
+	HandlerInit(&game->handler, 0);
+
+	MainStart(game);
 }
 
 // Initialize necessary data for rendering the game 
@@ -108,6 +112,7 @@ void MainUpdate(Game *game, float delta_time) {
 
 // Render objects to buffer texture
 void MainDraw(Game *game, uint8_t flags) {
+	HandlerDraw(&game->handler);
 }
 
 void OverScreenUpdate(Game *game, float delta_time) {

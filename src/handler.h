@@ -8,11 +8,49 @@
 // Type used for indexing/count of entities and components, easy to change if needed
 #define INT_N	int16_t
 
+#define ENTITY_CAP 1024
+#define COMP_CAP	512
+
 // How many component types there are
 #define COMP_TYPE_COUNT 	31
 
 // No component
 #define COMP_NULL			-1
+
+enum COMP_BITS {
+		B_COMP_TRANSFORM		= 0x00000001,
+		B_COMP_SPRITE			= 0x00000002,
+		B_empty3			 	= 0x00000004,
+		B_empty2			 	= 0x00000008,
+		B_empty4			 	= 0x00000010,
+		B_empty5			 	= 0x00000020,
+		B_empty6			 	= 0x00000040,
+		B_empty7			 	= 0x00000080,
+		B_empty8			 	= 0x00000100,
+		B_empty9			 	= 0x00000200,
+		B_empty10			 	= 0x00000400,
+		B_empty11			 	= 0x00000800,
+		B_empty12 				= 0x00001000,
+		B_empty13 				= 0x00002000,
+		B_empty14 				= 0x00004000,
+		B_empty15 				= 0x00008000,
+		B_empty16 				= 0x00010000,
+		B_empty17 				= 0x00020000,
+		B_empty18 				= 0x00040000,
+		B_empty19 				= 0x00080000,
+		B_empty20 				= 0x00100000,
+		B_empty21 				= 0x00200000,
+		B_empty22 				= 0x00400000,
+		B_empty23 				= 0x00800000,
+		B_empty24 				= 0x01000000,
+		B_empty25 				= 0x02000000,
+		B_empty26 				= 0x04000000,
+		B_empty27 				= 0x08000000,
+		B_empty28 				= 0x10000000,
+		B_empty29 				= 0x20000000,
+		B_empty30 				= 0x40000000,
+		B_empty31 				= 0x80000000
+};
 
 // Component mapping struct
 // Has array containining indices of components. 
@@ -32,6 +70,7 @@ typedef struct {
 
 // Base entity struct 
 typedef struct {
+	ComponentMap comp_map;
 	uint32_t components;
 	INT_N id;
 
@@ -40,7 +79,7 @@ typedef struct {
 } Entity;
 
 // Transform component 
-#define COMP_TRANSFORM 0x01
+#define COMP_TRANSFORM B_COMP_TRANSFORM
 typedef struct {
 	Vector2 position;
 	Vector2 velocity;
@@ -51,7 +90,7 @@ typedef struct {
 } comp_Transform;
 
 // Sprite component
-#define COMP_SPRITE 0x02
+#define COMP_SPRITE B_COMP_SPRITE
 typedef struct {
 	uint16_t frame;
 	uint16_t sprite_id; 
@@ -73,8 +112,10 @@ typedef struct {
 	ComponentMap *comp_mappings;
 	
 	// Component arrays
-	comp_Transform *comp_transforms;
-	comp_Sprite *comp_sprites;
+	void *comp_arr[COMP_TYPE_COUNT];	
+
+	uint32_t comp_type_bits[COMP_TYPE_COUNT];
+	size_t comp_size[COMP_TYPE_COUNT];
 
 	// Count and capacity:
 	// count for current number of 'thing'
@@ -84,8 +125,9 @@ typedef struct {
 	INT_N entity_count, entity_capacity;
 
 	// For components:
-	INT_N transform_count, transform_capacity;
-	INT_N sprite_count, sprite_capacity;
+	//INT_N transform_count, transform_capacity;
+	//INT_N sprite_count, sprite_capacity;
+	INT_N comp_count[COMP_TYPE_COUNT], comp_cap[COMP_TYPE_COUNT];
 
 } Handler;
 
@@ -104,12 +146,15 @@ void HandlerUpdate(Handler *handler, float dt);
 // Renderer will process requests then draw them to buffer
 void HandlerDraw(Handler *handler);
 
+short CompBitToID(uint32_t bit);
+
 // Create a new entity,
 // insert entity and it's components to respective arrays
 void AddEntity(Handler *handler, uint32_t components);
 
-// Compenent/systems update functions
+INT_N TransformAdd(Handler *handler, comp_Transform comp_transform);
 void TransformsUpdate(Handler *handler, float dt);
+
 void SpritesUpdate(Handler *handler, float dt);
 
 #endif

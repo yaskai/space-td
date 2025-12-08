@@ -2,6 +2,7 @@
 #include "raylib.h"
 #include "config.h"
 #include "sprites.h"
+#include "handler.h"
 
 #ifndef GAME_H_
 #define GAME_H_
@@ -28,14 +29,16 @@ enum INPUT_METHODS {
 };
 
 typedef struct {
-	uint8_t flags; 
-	uint8_t state;
+	Config conf;
+	Camera2D cam;
+
+	Handler handler;
 
 	Rectangle render_src_rec;
 	Rectangle render_dest_rec;
 
-	Config conf;
-	Camera2D cam;
+	uint8_t flags; 
+	uint8_t state;
 } Game;
 
 void GameInit(Game *game);
