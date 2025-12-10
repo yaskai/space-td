@@ -18,6 +18,9 @@
 #define COMP_NULL			-1
 #define COMP_NULL_ALIAS		"comp_null"
 
+// Maximum log message size
+#define MESSAGE_CAP			1024
+
 enum COMP_BITS {
 		B_COMP_TRANSFORM		= 0x00000001,
 		B_COMP_SPRITE			= 0x00000002,
@@ -67,15 +70,11 @@ typedef struct {	\
 		.count = 0,	\
 		.capacity = COMP_CAP,	\
 	};	\
-	\
 	void _pool_##_name##_init() { \
 		_pool_##_name.data = calloc(COMP_CAP, sizeof(_type)); \
 	} \
-	\
 	INT_N _pool_##_name##_add(_type thing) { \
-		\
 		_pool_##_name.data[_pool_##_name.count] = thing;	\
-		printf("return val for pool add = %d\n", _pool_##_name.count); \
 		return _pool_##_name.count++; \
 	}
 
@@ -139,22 +138,10 @@ typedef struct {
 	
 	// Component mapping array	
 	ComponentMap *comp_mappings;
-	
-	// Component arrays
-	void *comp_arr[COMP_TYPE_COUNT];	
-	size_t comp_size[COMP_TYPE_COUNT];
 
-	// Count and capacity:
-	// count for current number of 'thing'
-	// capacity for maximum allowed memory allocated for array of 'thing'
-	//
-	// For entities:
-	INT_N entity_count, entity_capacity;
-
-	// For components:
-	//INT_N transform_count, transform_capacity;
-	//INT_N sprite_count, sprite_capacity;
-	INT_N comp_count[COMP_TYPE_COUNT], comp_cap[COMP_TYPE_COUNT];
+	// Count and capacity for entity array:
+	INT_N entity_count; 
+	INT_N entity_capacity;
 
 } Handler;
 
@@ -184,7 +171,7 @@ void TransformsUpdate(Handler *handler, float dt);
 
 void SpritesUpdate(Handler *handler, float dt);
 
-char* str_component_mapping(short in_mask);
 void PrintComponentMappings(Handler *handler, INT_N entity_id);
+void HandlerLogMessage(Handler *handler, char message[]);
 
 #endif

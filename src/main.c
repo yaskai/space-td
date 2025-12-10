@@ -18,7 +18,7 @@ int main() {
 
 	// Open window, use values from config file
 	SetConfigFlags(FLAG_BORDERLESS_WINDOWED_MODE);
-	InitWindow(game.conf.window_width, game.conf.window_height, "Fish Game Demo");
+	InitWindow(game.conf.window_width, game.conf.window_height, "Game");
 	SetTargetFPS(game.conf.refresh_rate);
 	HideCursor();
 	

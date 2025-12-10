@@ -60,10 +60,7 @@ INT_N AddEntity(Handler *handler, uint32_t components) {
 	for(uint32_t i = 0; i < COMP_TYPE_COUNT; i++) {
 		uint32_t bit = (1 << i);
 
-		//if(comp_names[i]) printf("checking for %s component \n", comp_names[i]);
-
-		if(!(components & bit)) continue;
-		//printf("%s component found!\n", comp_names[i]);
+		if(!(components & bit)) continue; 
 
 		switch(bit) {
 			case COMP_TRANSFORM: {
@@ -125,9 +122,9 @@ void TransformsUpdate(Handler *handler, float dt) {
 }
 
 void PrintComponentMappings(Handler *handler, INT_N entity_id) {
-	printf("----------------------------------------------------\n");
-	printf("------ component mappings for entity [%04d] --------\n", entity_id);
-	printf("----------------------------------------------------\n");
+	printf("____________________________________________________\n");
+	printf("______ component mappings for entity [%04d] ________\n", entity_id);
+	printf("____________________________________________________\n");
 
 	Entity *entity = &handler->entities[entity_id];
 	for(short i = 0; i < COMP_TYPE_COUNT; i++) {
@@ -138,9 +135,9 @@ void PrintComponentMappings(Handler *handler, INT_N entity_id) {
 		else 
 			snprintf(id_str, sizeof(id_str), "%s", COMP_NULL_ALIAS);
 
-		printf("mapping: %s = %s\n", comp_names[i], id_str);	
+		printf("| mapping: %s = %s\n", comp_names[i], id_str);	
 	}
 
-	printf("----------------------------------------------------\n");
+	printf("____________________________________________________\n");
 }
 
