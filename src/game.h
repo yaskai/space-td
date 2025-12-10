@@ -8,8 +8,8 @@
 #define GAME_H_
 
 // Render target resolution
-#define VIRTUAL_WIDTH	1920	
-#define VIRTUAL_HEIGHT	1080 
+#define VIRTUAL_WIDTH	(1920 / 2)	
+#define VIRTUAL_HEIGHT	(1080 / 2)
 
 #define SPR_POOL &game->sprite_loader.spr_pool
 

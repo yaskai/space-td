@@ -1,6 +1,6 @@
 # Compiler and flags
 CC := gcc
-CFLAGS := -O3 -Wall -std=c99 -Ibuild/external/raylib/src -I/usr/include/SDL2 -DPLATFORM_DESKTOP_SDL
+CFLAGS := -Wno-missing-braces -O3 -Wall -std=c99 -Ibuild/external/raylib/src -I/usr/include/SDL2 -DPLATFORM_DESKTOP_SDL
 LDFLAGS := -lSDL2 -lm -ldl -lpthread -lGL -lrt -lX11
 
 # Paths

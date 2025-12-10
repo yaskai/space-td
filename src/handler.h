@@ -6,16 +6,17 @@
 #define HANDLER_H_
 
 // Type used for indexing/count of entities and components, easy to change if needed
-#define INT_N	int16_t
+#define INT_N int16_t
 
 #define ENTITY_CAP 1024
 #define COMP_CAP	512
 
 // How many component types there are
-#define COMP_TYPE_COUNT 	31
+#define COMP_TYPE_COUNT 	32
 
 // No component
 #define COMP_NULL			-1
+#define COMP_NULL_ALIAS		"comp_null"
 
 enum COMP_BITS {
 		B_COMP_TRANSFORM		= 0x00000001,
@@ -52,20 +53,47 @@ enum COMP_BITS {
 		B_empty31 				= 0x80000000
 };
 
+#define define_component_pool(_name, _type)	\
+typedef struct {	\
+	_type *data;	\
+	INT_N count;	\
+	INT_N capacity;	\
+} _name;
+
+#define declare_component_pool(_name, _type)	\
+	define_component_pool(_name, _type)	\
+	_name _pool_##_name = (_name) {	\
+		.data = NULL,	\
+		.count = 0,	\
+		.capacity = COMP_CAP,	\
+	};	\
+	\
+	void _pool_##_name##_init() { \
+		_pool_##_name.data = calloc(COMP_CAP, sizeof(_type)); \
+	} \
+	\
+	INT_N _pool_##_name##_add(_type thing) { \
+		\
+		_pool_##_name.data[_pool_##_name.count] = thing;	\
+		printf("return val for pool add = %d\n", _pool_##_name.count); \
+		return _pool_##_name.count++; \
+	}
+
 // Component mapping struct
 // Has array containining indices of components. 
 typedef struct {
+	// *
 	// Component types can be found with a 1 shifting by index 
 	// Useful for referring to specific component types
 	//
 	// eg.   
 	// component_id[0] = 99  
 	// translates to:
-	// component of type 1 << 0 has index 99 in it's pool  
-	// so, 1 << 0 = 0x01 meaning:  
+	// component of type 1 >> 0 has index 99 in it's pool  
+	// so, 1 >> 0 = 0x01 meaning:  
 	// transform component for this mapping is located at transforms[99]
 	INT_N component_id[COMP_TYPE_COUNT];
-
+	// *
 } ComponentMap;
 
 // Base entity struct 
@@ -77,6 +105,7 @@ typedef struct {
 	uint8_t flags;
 
 } Entity;
+
 
 // Transform component 
 #define COMP_TRANSFORM B_COMP_TRANSFORM
@@ -113,8 +142,6 @@ typedef struct {
 	
 	// Component arrays
 	void *comp_arr[COMP_TYPE_COUNT];	
-
-	uint32_t comp_type_bits[COMP_TYPE_COUNT];
 	size_t comp_size[COMP_TYPE_COUNT];
 
 	// Count and capacity:
@@ -146,15 +173,18 @@ void HandlerUpdate(Handler *handler, float dt);
 // Renderer will process requests then draw them to buffer
 void HandlerDraw(Handler *handler);
 
-short CompBitToID(uint32_t bit);
-
 // Create a new entity,
 // insert entity and it's components to respective arrays
-void AddEntity(Handler *handler, uint32_t components);
+INT_N AddEntity(Handler *handler, uint32_t components);
+
+void SpawnEntity(Handler *handler, comp_Transform transform);
 
 INT_N TransformAdd(Handler *handler, comp_Transform comp_transform);
 void TransformsUpdate(Handler *handler, float dt);
 
 void SpritesUpdate(Handler *handler, float dt);
+
+char* str_component_mapping(short in_mask);
+void PrintComponentMappings(Handler *handler, INT_N entity_id);
 
 #endif

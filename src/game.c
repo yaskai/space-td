@@ -10,6 +10,8 @@
 
 Texture2D controls;
 
+int fps = 60;
+
 // Buffer texture game draws to, used for scaling graphics to desired resolution 
 RenderTexture2D render_target;
 
@@ -27,6 +29,8 @@ void GameInit(Game *game) {
 	// Initialize config struct and read options from file
 	game->conf = (Config){0};
 	ConfigRead(&game->conf, "options.conf");
+
+	fps = game->conf.refresh_rate;
 
 	// Initialize camera
 	game->cam = (Camera2D) {
@@ -63,6 +67,18 @@ void GameUpdate(Game *game) {
 	// Send quit request on hitting escape
 	if(IsKeyPressed(KEY_ESCAPE))
 		game->flags |= GAME_QUIT_REQUEST;
+
+	/*
+	if(IsKeyDown(KEY_A)) {
+		if(fps > 1) fps--;
+		SetTargetFPS(fps);
+	}
+
+	if(IsKeyDown(KEY_D)) {
+		if(fps < 100) fps++;
+		SetTargetFPS(fps);
+	}
+	*/
 	
 	// Call state appropriate update function
 	game_update_fn[game->state](game, delta_time);
@@ -72,6 +88,8 @@ void GameUpdate(Game *game) {
 void GameDrawToBuffer(Game *game, uint8_t flags) {
 	BeginTextureMode(render_target);
 	ClearBackground((Color){0});
+
+	DrawFPS(0, 0);
 
 	// Call state appropriate draw function
 	game_draw_fn[game->state](game, flags);
@@ -108,6 +126,7 @@ void TitleDraw(Game *game, uint8_t flags) {
 
 // Main gameplay loop logic
 void MainUpdate(Game *game, float delta_time) {
+	HandlerUpdate(&game->handler, delta_time);
 }
 
 // Render objects to buffer texture
