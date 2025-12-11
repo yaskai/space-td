@@ -24,7 +24,7 @@
 enum COMP_BITS {
 		B_COMP_TRANSFORM		= 0x00000001,
 		B_COMP_SPRITE			= 0x00000002,
-		B_empty3			 	= 0x00000004,
+		B_COMP_SELECTABLE		= 0x00000004,
 		B_empty2			 	= 0x00000008,
 		B_empty4			 	= 0x00000010,
 		B_empty5			 	= 0x00000020,
@@ -134,6 +134,13 @@ typedef struct {
 
 } comp_Sprite;
 
+// Selectable component
+#define COMP_SELECTABLE B_COMP_SELECTABLE
+typedef struct {
+	uint8_t flags;
+
+} comp_Selectable;
+
 // Handler struct 
 // Stores all entity and component data
 // Data is modified with 'ComponentUpdate()' functions
@@ -180,5 +187,7 @@ void SpritesUpdate(Handler *handler, float dt);
 
 void PrintComponentMappings(Handler *handler, INT_N entity_id);
 void HandlerLogMessage(Handler *handler, char message[]);
+
+void CheckSelectedUnits(Handler *handler, Rectangle rec);
 
 #endif
