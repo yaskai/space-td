@@ -7,6 +7,7 @@
 #include "handler.h"
 
 declare_component_pool(transforms, comp_Transform);
+declare_component_pool(sprites, comp_Sprite);
 
 char *comp_names[COMP_TYPE_COUNT] = {
 	"transform",
@@ -15,6 +16,7 @@ char *comp_names[COMP_TYPE_COUNT] = {
 
 void HandlerInit(Handler *handler, float dt) {
 	_pool_transforms_init();
+	_pool_sprites_init();
 
 	// Allocate memory for entities
 	handler->entity_count = 0;
@@ -40,10 +42,16 @@ void HandlerUpdate(Handler *handler, float dt) {
 }
 
 void HandlerDraw(Handler *handler) {
-	DrawText(TextFormat("transform_count: %d", _pool_transforms.count), 100, 100, 30, RAYWHITE);
+	//DrawText(TextFormat("entity_count: %d", handler->entity_count), 100, 100, 30, RAYWHITE);
 
-	for(INT_N i = 0; i < _pool_transforms.count; i++) {
-		comp_Transform *transform = &_pool_transforms.data[i];
+	for(INT_N i = 0; i < handler->entity_count; i++) {
+		Entity *ent = &handler->entities[i];
+
+		uint32_t mask = (COMP_TRANSFORM | COMP_SPRITE);
+		if(!(ent->components & mask)) continue;
+
+		comp_Transform *transform = _pool_transforms_get(ent->comp_map.component_id[1 >> COMP_TRANSFORM]);
+		comp_Sprite *sprite = _pool_sprites_get(ent->comp_map.component_id[1 >> COMP_SPRITE]);
 
 		DrawCircleV(transform->position, 10, BLUE);
 		DrawCircleV(transform->position, 5, BLACK);
@@ -63,15 +71,29 @@ INT_N AddEntity(Handler *handler, uint32_t components) {
 		if(!(components & bit)) continue; 
 
 		switch(bit) {
+			printf("adding %s component...\n", comp_names[i]);
+
 			case COMP_TRANSFORM: {
 				// Create empty transform
 				comp_Transform new_transform = (comp_Transform) { 0 };
 
 				// Add transform to pool 
-				INT_N transform_id = _pool_transforms_add(new_transform);
+				INT_N comp_id = _pool_transforms_add(new_transform);
 
 				// Add transform's id to entity component mappings 
-				mappings[i] = transform_id;
+				mappings[i] = comp_id;
+
+			} break;
+
+			case COMP_SPRITE: {
+				// Create empty sprite
+				comp_Sprite new_sprite = (comp_Sprite) { 0 };
+
+				// Add sprite to pool 
+				INT_N comp_id = _pool_sprites_add(new_sprite);
+
+				// Add transform's id to entity component mappings 
+				mappings[i] = comp_id;
 
 			} break;
 		}	
@@ -98,7 +120,7 @@ INT_N AddEntity(Handler *handler, uint32_t components) {
 // Make, bind and map specified transform component 
 void SpawnEntity(Handler *handler, comp_Transform transform) {
 	// Initialize entity, insert to entity array
-	INT_N id = AddEntity(handler, (COMP_TRANSFORM));
+	INT_N id = AddEntity(handler, (COMP_TRANSFORM | COMP_SPRITE));
 
 	// Get pointer to newly created entity 
 	Entity *spawned_entity = &handler->entities[id];
@@ -114,10 +136,11 @@ void SpawnEntity(Handler *handler, comp_Transform transform) {
 }
 
 void TransformsUpdate(Handler *handler, float dt) {
+	float time = GetTime(); 
 	for(INT_N i = 0; i < _pool_transforms.count; i++) {
 		comp_Transform *transform = &_pool_transforms.data[i];
 		
-		transform->position.y = 100 * sin(i + GetTime() * (2)) + 400;
+		transform->position.y = 100 * sin(i + time * (1)) + 400;
 	}
 }
 

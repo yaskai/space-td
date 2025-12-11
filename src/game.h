@@ -3,13 +3,14 @@
 #include "config.h"
 #include "sprites.h"
 #include "handler.h"
+#include "cursor.h"
 
 #ifndef GAME_H_
 #define GAME_H_
 
 // Render target resolution
-#define VIRTUAL_WIDTH	(1920 / 2)	
-#define VIRTUAL_HEIGHT	(1080 / 2)
+#define VIRTUAL_WIDTH	(1920 * 0.5f)	
+#define VIRTUAL_HEIGHT	(1080 * 0.5f)
 
 #define SPR_POOL &game->sprite_loader.spr_pool
 
@@ -29,10 +30,12 @@ enum INPUT_METHODS {
 };
 
 typedef struct {
+	Handler handler;
+
 	Config conf;
 	Camera2D cam;
 
-	Handler handler;
+	Cursor cursor;
 
 	Rectangle render_src_rec;
 	Rectangle render_dest_rec;

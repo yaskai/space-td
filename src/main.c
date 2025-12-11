@@ -17,10 +17,10 @@ int main() {
 	GameInit(&game);
 
 	// Open window, use values from config file
-	SetConfigFlags(FLAG_BORDERLESS_WINDOWED_MODE);
+	SetConfigFlags(FLAG_BORDERLESS_WINDOWED_MODE | FLAG_WINDOW_RESIZABLE | FLAG_VSYNC_HINT);
 	InitWindow(game.conf.window_width, game.conf.window_height, "Game");
 	SetTargetFPS(game.conf.refresh_rate);
-	HideCursor();
+	//HideCursor();
 	
 	// Load empty texture for use as a buffer
 	// Buffer is drawn and scaled to window resolution
@@ -29,7 +29,7 @@ int main() {
 	// Load game assets(spritesheets, sound effects, music, etc)
 	GameContentInit(&game);
 
-	SetExitKey(KEY_F10);	
+	//SetExitKey(KEY_F10);	
 	bool exit = false;
 
 	// Main loop:

@@ -76,7 +76,10 @@ typedef struct {	\
 	INT_N _pool_##_name##_add(_type thing) { \
 		_pool_##_name.data[_pool_##_name.count] = thing;	\
 		return _pool_##_name.count++; \
-	}
+	}	\
+	_type* _pool_##_name##_get(INT_N id) { \
+		return &_pool_##_name.data[id]; \
+	} 
 
 // Component mapping struct
 // Has array containining indices of components. 
@@ -104,7 +107,6 @@ typedef struct {
 	uint8_t flags;
 
 } Entity;
-
 
 // Transform component 
 #define COMP_TRANSFORM B_COMP_TRANSFORM
