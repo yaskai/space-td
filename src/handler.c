@@ -30,11 +30,21 @@ void HandlerInit(Handler *handler, float dt) {
 				.velocity = (Vector2){ 0, 0 },
 				.scale = 1, 
 				.rotation = 0 
-			} 
+			}
 		);
 		
 		PrintComponentMappings(handler, i);
 	}
+}
+
+// Free allocated memory 
+void HandlerClose(Handler *handler) {
+	// Unload entities
+	free(handler->entities);
+
+	// Unload component pools
+	_pool_transforms_free();
+	_pool_sprites_free();
 }
 
 void HandlerUpdate(Handler *handler, float dt) {

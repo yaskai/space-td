@@ -79,7 +79,10 @@ typedef struct {	\
 	}	\
 	_type* _pool_##_name##_get(INT_N id) { \
 		return &_pool_##_name.data[id]; \
-	} 
+	} \
+	void _pool_##_name##_free() { \
+		free(_pool_##_name.data);	\
+	} \
 
 // Component mapping struct
 // Has array containining indices of components. 
@@ -151,6 +154,8 @@ typedef struct {
 // Allocate memory for entity and component arrays,
 // set pointers, defaults, etc.
 void HandlerInit(Handler *handler, float dt);
+
+void HandlerClose(Handler *handler);
 
 // Update all systems
 void HandlerUpdate(Handler *handler, float dt);

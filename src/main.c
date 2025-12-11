@@ -26,7 +26,7 @@ int main() {
 	// Buffer is drawn and scaled to window resolution
 	GameRenderInit(&game);
 
-	// Load game assets(spritesheets, sound effects, music, etc)
+	// Load game assets: spritesheets, audio, etc.
 	GameContentInit(&game);
 
 	//SetExitKey(KEY_F10);	

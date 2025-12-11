@@ -104,6 +104,7 @@ void GameDrawToWindow(Game *game) {
 // Free allocated memory for buffer texture and assets 
 void GameClose(Game *game) {
 	UnloadRenderTexture(render_target);
+	HandlerClose(&game->handler);
 }
 
 // Update title screen UI elements, start gameplay on user input
