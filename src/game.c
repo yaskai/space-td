@@ -7,6 +7,7 @@
 #include "game.h"
 #include "config.h"
 #include "sprites.h"
+#include "kmath.h"
 
 Texture2D controls;
 
@@ -57,6 +58,8 @@ void GameRenderInit(Game *game) {
 	// Set source and destination rectangle values for window scaling
 	game->render_src_rec  = (Rectangle) { 0, 0, VIRTUAL_WIDTH, -VIRTUAL_HEIGHT };
 	game->render_dest_rec = (Rectangle) { 0, 0, game->conf.window_width, game->conf.window_height };
+
+	ScaleInit(game->render_src_rec, game->render_dest_rec);
 }
 
 // Initialize sprite loader struct, load assets
@@ -99,7 +102,7 @@ void GameDrawToWindow(Game *game) {
 	DrawFPS(0, 0);
 	CursorDraw(&game->cursor);
 
-	DrawCircleV(GetVirtualMousePosition(game), 5, GREEN);
+	//DrawCircleV(game->cursor.virt_position, 5, GREEN);
 
 	EndDrawing();
 }
@@ -152,16 +155,5 @@ void OptionsScreenDraw(Game *game, uint8_t flags) {
 // Start gameplay
 void MainStart(Game *game) {
 	game->state = GAME_MAIN;
-}
-
-Vector2 GetVirtualMousePosition(Game *game) {
-	float scale = game->conf.window_width / VIRTUAL_WIDTH;
-
-	Vector2 virt_pos = (Vector2) {
-		floor(GetMousePosition().x / scale),
-		floor(GetMousePosition().y / scale),
-	};
-	
-	return virt_pos;
 }
 

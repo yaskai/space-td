@@ -7,6 +7,7 @@
 #include "raymath.h"
 #include "handler.h"
 #include "game.h"
+#include "kmath.h"
 
 // Declare component pools
 declare_component_pool(transforms, comp_Transform);
@@ -221,6 +222,8 @@ void PrintComponentMappings(Handler *handler, INT_N entity_id) {
 void CheckSelectedUnits(Handler *handler, Rectangle rec) {
 	uint32_t mask = (COMP_TRANSFORM | COMP_SELECTABLE);
 
+	rec = ScaledRec(rec);
+
 	for(INT_N i = 0; i < handler->entity_count; i++) {
 		Entity *entity = &handler->entities[i];
 
@@ -234,7 +237,6 @@ void CheckSelectedUnits(Handler *handler, Rectangle rec) {
 		if(CheckCollisionCircleRec(transform->position, 10, rec)) {
 			selectable->flags |= SELECTED;
 		}
-
 	}
 }
 

@@ -46,7 +46,7 @@ void CursorUpdate(Cursor *cursor, Handler *handler, Camera2D *camera, float dt) 
 }
 
 void CursorDraw(Cursor *cursor) {
-	DrawCircleV(cursor->screen_position, 5, SKYBLUE);
+	DrawCircleV(cursor->world_position, 5, SKYBLUE);
 
 	if(cursor->flags & CURSOR_OPEN_SELECTION) {
 		DrawRectangleRec(cursor->selection_rec, ColorAlpha(RAYWHITE, 0.5f));
