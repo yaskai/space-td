@@ -220,20 +220,27 @@ void PrintComponentMappings(Handler *handler, INT_N entity_id) {
 }
 
 void CheckSelectedUnits(Handler *handler, Rectangle rec) {
-	uint32_t mask = (COMP_TRANSFORM | COMP_SELECTABLE);
-
+	// Convert window space rectangle to game space
 	rec = ScaledRec(rec);
 
+	// Set bit mask to components required for selection
+	uint32_t mask = (COMP_TRANSFORM | COMP_SELECTABLE);
+
+	// Iterate entities
 	for(INT_N i = 0; i < handler->entity_count; i++) {
 		Entity *entity = &handler->entities[i];
 
+		// Skip selecting entities that don't have require components
 		if(!(entity->components & mask)) continue;
 
+		// Get components
 		comp_Selectable *selectable = _pool_selectables_get(entity->comp_map.component_id[1 >> COMP_SELECTABLE]);
 		comp_Transform *transform = _pool_transforms_get(entity->comp_map.component_id[1 >> COMP_TRANSFORM]);
 
+		// Clear selected flag
 		selectable->flags &= ~SELECTED;
 
+		// Set selected flag on if in box
 		if(CheckCollisionCircleRec(transform->position, 10, rec)) {
 			selectable->flags |= SELECTED;
 		}
