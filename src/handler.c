@@ -6,6 +6,7 @@
 #include "raylib.h"
 #include "raymath.h"
 #include "handler.h"
+#include "game.h"
 
 // Declare component pools
 declare_component_pool(transforms, comp_Transform);
@@ -32,10 +33,23 @@ void HandlerInit(Handler *handler, Camera2D *camera, float dt) {
 	// Set camera pointer
 	handler->camera = camera;
 
-	for(int i = 0; i < 30; i++) { 
+	for(int i = 0; i < 60; i++) { 
 		SpawnEntity( 
 			handler, (comp_Transform) { 
 				.position = (Vector2){ 30 + (i * 30), 300},
+				.velocity = (Vector2){ 0, 0 },
+				.scale = 1, 
+				.rotation = 0 
+			}
+		);
+		
+		PrintComponentMappings(handler, i);
+	}
+
+	for(int i = 0; i < 60; i++) { 
+		SpawnEntity( 
+			handler, (comp_Transform) { 
+				.position = (Vector2){ 30 + (i * 30), 800},
 				.velocity = (Vector2){ 0, 0 },
 				.scale = 1, 
 				.rotation = 0 
@@ -179,7 +193,8 @@ void TransformsUpdate(Handler *handler, float dt) {
 	for(INT_N i = 0; i < _pool_transforms.count; i++) {
 		comp_Transform *transform = &_pool_transforms.data[i];
 		
-		transform->position.y = 100 * sin(i + time * (1)) + 400;
+		//transform->position.y = 100 * sin(i + time * (1)) + 400;
+		//transform->position.y += sin(i + time * (1));
 	}
 }
 
@@ -204,14 +219,6 @@ void PrintComponentMappings(Handler *handler, INT_N entity_id) {
 }
 
 void CheckSelectedUnits(Handler *handler, Rectangle rec) {
-	/*
-	Vector2 edge_min = (Vector2) { rec.x, rec.y };	
-	Vector2 edge_max = Vector2Add( edge_min, (Vector2) { rec.width, rec.height } );
-
-	edge_min = GetScreenToWorld2D(edge_min, *handler->camera);
-	edge_max = GetScreenToWorld2D(edge_max, *handler->camera);
-	*/
-
 	uint32_t mask = (COMP_TRANSFORM | COMP_SELECTABLE);
 
 	for(INT_N i = 0; i < handler->entity_count; i++) {

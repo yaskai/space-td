@@ -9,10 +9,10 @@
 #define GAME_H_
 
 // Render target resolution
-//#define VIRTUAL_WIDTH	(1920 * 0.5f)	
-//#define VIRTUAL_HEIGHT	(1080 * 0.5f)
-#define VIRTUAL_WIDTH	(1920)	
-#define VIRTUAL_HEIGHT	(1080)
+#define VIRTUAL_WIDTH	(1920 * 0.75f)	
+#define VIRTUAL_HEIGHT	(1080 * 0.75f)
+//#define VIRTUAL_WIDTH	(1920)	
+//#define VIRTUAL_HEIGHT	(1080)
 
 #define SPR_POOL &game->sprite_loader.spr_pool
 
@@ -71,7 +71,8 @@ void OptionsScreenDraw(Game *game, uint8_t flags);
 
 void MainStart(Game *game);
 
-void GameLoadSpriteBlock(Game *game, uint8_t block_id);
-void GameLoadAudioBlock(Game *game, uint8_t block_id);
+Vector2 WindowToTarget(Vector2 window_pos);
+
+Vector2 GetVirtualMousePosition(Game *game);
 
 #endif

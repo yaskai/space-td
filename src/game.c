@@ -35,7 +35,8 @@ void GameInit(Game *game) {
 	// Initialize camera
 	game->cam = (Camera2D) {
 		.target = {0, 0},
-		.offset = Vector2Scale((Vector2){VIRTUAL_WIDTH, VIRTUAL_HEIGHT}, 0.5f),
+		//.offset = Vector2Scale((Vector2){VIRTUAL_WIDTH, VIRTUAL_HEIGHT}, 0.5f),
+		.offset = Vector2Zero(),
 		.rotation = 0.0f,
 		.zoom = 1.0f
 	};
@@ -98,6 +99,8 @@ void GameDrawToWindow(Game *game) {
 	DrawFPS(0, 0);
 	CursorDraw(&game->cursor);
 
+	DrawCircleV(GetVirtualMousePosition(game), 5, GREEN);
+
 	EndDrawing();
 }
 
@@ -120,14 +123,18 @@ void TitleDraw(Game *game, uint8_t flags) {
 
 // Main gameplay loop logic
 void MainUpdate(Game *game, float delta_time) {
-	CursorUpdate(&game->cursor, &game->handler, delta_time);
+	CursorUpdate(&game->cursor, &game->handler, &game->cam, delta_time);
 
 	HandlerUpdate(&game->handler, delta_time);
 }
 
 // Render objects to buffer texture
 void MainDraw(Game *game, uint8_t flags) {
+	BeginMode2D(game->cam);
 	HandlerDraw(&game->handler);
+	EndMode2D();
+
+	//CursorDraw(&game->cursor);
 }
 
 void OverScreenUpdate(Game *game, float delta_time) {
@@ -145,5 +152,16 @@ void OptionsScreenDraw(Game *game, uint8_t flags) {
 // Start gameplay
 void MainStart(Game *game) {
 	game->state = GAME_MAIN;
+}
+
+Vector2 GetVirtualMousePosition(Game *game) {
+	float scale = game->conf.window_width / VIRTUAL_WIDTH;
+
+	Vector2 virt_pos = (Vector2) {
+		floor(GetMousePosition().x / scale),
+		floor(GetMousePosition().y / scale),
+	};
+	
+	return virt_pos;
 }
 

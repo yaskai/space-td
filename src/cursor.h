@@ -13,12 +13,13 @@ typedef struct {
 	Vector2 screen_position;
 	Vector2 world_position;
 	Vector2 click_position;
+	Vector2 virt_position;
 
 	uint8_t flags;
 
 } Cursor;
 
-void CursorUpdate(Cursor *cursor, Handler *handler, float dt);
+void CursorUpdate(Cursor *cursor, Handler *handler, Camera2D *camera, float dt);
 void CursorDraw(Cursor *cursor);
 
 #endif
