@@ -42,7 +42,7 @@ void GameInit(Game *game) {
 
 	game->cursor = (Cursor){0};
 
-	HandlerInit(&game->handler, 0);
+	HandlerInit(&game->handler, &game->cam, 0);
 
 	MainStart(game);
 }
@@ -120,7 +120,7 @@ void TitleDraw(Game *game, uint8_t flags) {
 
 // Main gameplay loop logic
 void MainUpdate(Game *game, float delta_time) {
-	CursorUpdate(&game->cursor, delta_time);
+	CursorUpdate(&game->cursor, &game->handler, delta_time);
 
 	HandlerUpdate(&game->handler, delta_time);
 }

@@ -82,7 +82,7 @@ typedef struct {	\
 	} \
 	void _pool_##_name##_free() { \
 		free(_pool_##_name.data);	\
-	} \
+	}
 
 // Component mapping struct
 // Has array containining indices of components. 
@@ -136,6 +136,7 @@ typedef struct {
 
 // Selectable component
 #define COMP_SELECTABLE B_COMP_SELECTABLE
+#define SELECTED		0x01
 typedef struct {
 	uint8_t flags;
 
@@ -151,6 +152,9 @@ typedef struct {
 	// Component mapping array	
 	ComponentMap *comp_mappings;
 
+	// Pointer to camera struct
+	Camera2D *camera;
+
 	// Count and capacity for entity array:
 	INT_N entity_count; 
 	INT_N entity_capacity;
@@ -160,7 +164,7 @@ typedef struct {
 // Initalize handler:
 // Allocate memory for entity and component arrays,
 // set pointers, defaults, etc.
-void HandlerInit(Handler *handler, float dt);
+void HandlerInit(Handler *handler, Camera2D *camera, float dt);
 
 void HandlerClose(Handler *handler);
 

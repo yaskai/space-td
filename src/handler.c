@@ -4,24 +4,33 @@
 #include <string.h>
 #include <math.h>
 #include "raylib.h"
+#include "raymath.h"
 #include "handler.h"
 
+// Declare component pools
 declare_component_pool(transforms, comp_Transform);
 declare_component_pool(sprites, comp_Sprite);
+declare_component_pool(selectables, comp_Selectable);
 
 char *comp_names[COMP_TYPE_COUNT] = {
-	"transform",
-	"sprite",
+	"transform	",
+	"sprite	",
+	"selectable	"
 };
 
-void HandlerInit(Handler *handler, float dt) {
+void HandlerInit(Handler *handler, Camera2D *camera, float dt) {
+	// Initialize component pools
 	_pool_transforms_init();
 	_pool_sprites_init();
+	_pool_selectables_init();
 
 	// Allocate memory for entities
 	handler->entity_count = 0;
 	handler->entities = calloc(ENTITY_CAP, sizeof(Entity));
 	handler->comp_mappings = calloc(ENTITY_CAP, sizeof(ComponentMap));
+
+	// Set camera pointer
+	handler->camera = camera;
 
 	for(int i = 0; i < 30; i++) { 
 		SpawnEntity( 
@@ -45,6 +54,7 @@ void HandlerClose(Handler *handler) {
 	// Unload component pools
 	_pool_transforms_free();
 	_pool_sprites_free();
+	_pool_selectables_free();
 }
 
 void HandlerUpdate(Handler *handler, float dt) {
@@ -63,8 +73,15 @@ void HandlerDraw(Handler *handler) {
 		comp_Transform *transform = _pool_transforms_get(ent->comp_map.component_id[1 >> COMP_TRANSFORM]);
 		comp_Sprite *sprite = _pool_sprites_get(ent->comp_map.component_id[1 >> COMP_SPRITE]);
 
-		DrawCircleV(transform->position, 10, BLUE);
-		DrawCircleV(transform->position, 5, BLACK);
+		DrawCircleLinesV(transform->position, 10, RAYWHITE);
+
+		if(ent->components & COMP_SELECTABLE) {
+			comp_Selectable *selectable = _pool_selectables_get(ent->comp_map.component_id[1 >> COMP_SELECTABLE]);
+
+			if(selectable->flags & SELECTED) {
+				DrawCircleLinesV(transform->position, 10, SKYBLUE);
+			}
+		}
 	}
 }
 
@@ -76,11 +93,11 @@ INT_N AddEntity(Handler *handler, uint32_t components) {
 
 	// Create new components and register their IDs to the mapping  
 	for(uint32_t i = 0; i < COMP_TYPE_COUNT; i++) {
-		uint32_t bit = (1 << i);
+		uint32_t mask = (1 << i);
 
-		if(!(components & bit)) continue; 
+		if(!(components & mask)) continue; 
 
-		switch(bit) {
+		switch(mask) {
 			printf("adding %s component...\n", comp_names[i]);
 
 			case COMP_TRANSFORM: {
@@ -102,7 +119,19 @@ INT_N AddEntity(Handler *handler, uint32_t components) {
 				// Add sprite to pool 
 				INT_N comp_id = _pool_sprites_add(new_sprite);
 
-				// Add transform's id to entity component mappings 
+				// Add sprite's id to entity component mappings 
+				mappings[i] = comp_id;
+
+			} break;
+
+			case COMP_SELECTABLE: {
+				// Create empty selectable
+				comp_Selectable new_selectable = (comp_Selectable) { 0 };
+
+				// Add selectable to pool 
+				INT_N comp_id = _pool_selectables_add(new_selectable);
+
+				// Add selectable's id to entity component mappings 
 				mappings[i] = comp_id;
 
 			} break;
@@ -130,7 +159,7 @@ INT_N AddEntity(Handler *handler, uint32_t components) {
 // Make, bind and map specified transform component 
 void SpawnEntity(Handler *handler, comp_Transform transform) {
 	// Initialize entity, insert to entity array
-	INT_N id = AddEntity(handler, (COMP_TRANSFORM | COMP_SPRITE));
+	INT_N id = AddEntity(handler, (COMP_TRANSFORM | COMP_SPRITE | COMP_SELECTABLE));
 
 	// Get pointer to newly created entity 
 	Entity *spawned_entity = &handler->entities[id];
@@ -172,5 +201,33 @@ void PrintComponentMappings(Handler *handler, INT_N entity_id) {
 	}
 
 	printf("____________________________________________________\n");
+}
+
+void CheckSelectedUnits(Handler *handler, Rectangle rec) {
+	/*
+	Vector2 edge_min = (Vector2) { rec.x, rec.y };	
+	Vector2 edge_max = Vector2Add( edge_min, (Vector2) { rec.width, rec.height } );
+
+	edge_min = GetScreenToWorld2D(edge_min, *handler->camera);
+	edge_max = GetScreenToWorld2D(edge_max, *handler->camera);
+	*/
+
+	uint32_t mask = (COMP_TRANSFORM | COMP_SELECTABLE);
+
+	for(INT_N i = 0; i < handler->entity_count; i++) {
+		Entity *entity = &handler->entities[i];
+
+		if(!(entity->components & mask)) continue;
+
+		comp_Selectable *selectable = _pool_selectables_get(entity->comp_map.component_id[1 >> COMP_SELECTABLE]);
+		comp_Transform *transform = _pool_transforms_get(entity->comp_map.component_id[1 >> COMP_TRANSFORM]);
+
+		selectable->flags &= ~SELECTED;
+
+		if(CheckCollisionCircleRec(transform->position, 10, rec)) {
+			selectable->flags |= SELECTED;
+		}
+
+	}
 }
 

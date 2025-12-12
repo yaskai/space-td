@@ -1,8 +1,9 @@
 #include "raylib.h"
 #include "raymath.h"
 #include "cursor.h"
+#include "handler.h"
 
-void CursorUpdate(Cursor *cursor, float dt) {
+void CursorUpdate(Cursor *cursor, Handler *handler, float dt) {
 	// Set world and screen positions
 	cursor->screen_position = GetMousePosition();
 	// TODO:
@@ -35,6 +36,9 @@ void CursorUpdate(Cursor *cursor, float dt) {
 	if(IsMouseButtonReleased(MOUSE_LEFT_BUTTON)) {
 		// Clear selection box
 		if(cursor->flags & CURSOR_OPEN_SELECTION) {
+
+			CheckSelectedUnits(handler, cursor->selection_rec);
+
 			cursor->selection_rec = (Rectangle){0};
 			cursor->flags &= ~CURSOR_OPEN_SELECTION;
 		}	

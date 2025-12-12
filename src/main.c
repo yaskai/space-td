@@ -17,7 +17,7 @@ int main() {
 	GameInit(&game);
 
 	// Open window, use values from config file
-	SetConfigFlags(FLAG_BORDERLESS_WINDOWED_MODE | FLAG_WINDOW_RESIZABLE | FLAG_VSYNC_HINT);
+	//SetConfigFlags(FLAG_BORDERLESS_WINDOWED_MODE | FLAG_WINDOW_RESIZABLE | FLAG_VSYNC_HINT);
 	InitWindow(game.conf.window_width, game.conf.window_height, "Game");
 	SetTargetFPS(game.conf.refresh_rate);
 	//HideCursor();

@@ -1,5 +1,6 @@
 #include <stdint.h>
 #include "raylib.h"
+#include "handler.h"
 
 #ifndef CURSOR_H_
 #define CURSOR_H_
@@ -17,7 +18,7 @@ typedef struct {
 
 } Cursor;
 
-void CursorUpdate(Cursor *cursor, float dt);
+void CursorUpdate(Cursor *cursor, Handler *handler, float dt);
 void CursorDraw(Cursor *cursor);
 
 #endif
