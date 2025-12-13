@@ -79,6 +79,19 @@ void HandlerUpdate(Handler *handler, float dt) {
 void HandlerDraw(Handler *handler) {
 	//DrawText(TextFormat("entity_count: %d", handler->entity_count), 100, 100, 30, RAYWHITE);
 
+	// Draw grid
+	for(uint8_t c = 0; c < 128; c++) {
+		Vector2 line_start = (Vector2) { c * 64, 0 };
+		Vector2 line_end  = (Vector2) { c * 64, 64 * 127 };
+		DrawLineV(line_start, line_end, GRAY);
+	}
+
+	for(uint8_t r = 0; r < 128; r++) {
+		Vector2 line_start = (Vector2) { 0, r * 64 };
+		Vector2 line_end  = (Vector2) { 64 * 127, r * 64};
+		DrawLineV(line_start, line_end, GRAY);
+	}
+
 	for(INT_N i = 0; i < handler->entity_count; i++) {
 		Entity *ent = &handler->entities[i];
 
@@ -242,7 +255,13 @@ void CheckSelectedUnits(Handler *handler, Rectangle rec) {
 		selectable->flags &= ~SELECTED;
 
 		// Set selected flag on if in box
+		/*
 		if(CheckCollisionCircleRec(transform->position, 10, rec)) {
+			selectable->flags |= SELECTED;
+		}
+		*/
+		
+		if(CheckCollisionPointRec(transform->position, rec)) {
 			selectable->flags |= SELECTED;
 		}
 	}

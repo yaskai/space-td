@@ -56,6 +56,10 @@ void CursorDraw(Cursor *cursor) {
 }
 
 void CursorCameraControls(Cursor *cursor, Camera2D *camera, float dt) {
+	// Track previous camera target
+	Vector2 prev = ScaledVec2WithCamera(cursor->screen_position, camera);
+
+	// Move with keys
 	Vector2 key_direction = Vector2Zero();	
 	
 	if(IsKeyDown(KEY_A)) key_direction.x--;
@@ -65,5 +69,17 @@ void CursorCameraControls(Cursor *cursor, Camera2D *camera, float dt) {
 	if(IsKeyDown(KEY_S)) key_direction.y++;
 
 	camera->target = Vector2Add(camera->target, Vector2Scale(key_direction, 1000 * dt));
+
+	// Zoom in & out
+	float scroll = GetMouseWheelMove();
+	if(fabsf(scroll) > 0) {
+		camera->zoom += scroll * dt;
+		camera->zoom = Clamp(camera->zoom, 0.1f, 2.0f);
+
+		Vector2 next = ScaledVec2WithCamera(cursor->screen_position, camera);
+
+		Vector2 diff = Vector2Subtract(prev, next);
+		camera->target = Vector2Add(camera->target, diff);
+	}
 }
 
