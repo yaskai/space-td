@@ -80,15 +80,15 @@ void HandlerDraw(Handler *handler) {
 	//DrawText(TextFormat("entity_count: %d", handler->entity_count), 100, 100, 30, RAYWHITE);
 
 	// Draw grid
-	for(uint8_t c = 0; c < 128; c++) {
+	for(uint8_t c = 0; c < 32; c++) {
 		Vector2 line_start = (Vector2) { c * 64, 0 };
-		Vector2 line_end  = (Vector2) { c * 64, 64 * 127 };
+		Vector2 line_end  = (Vector2) { c * 64, 64 * 31 };
 		DrawLineV(line_start, line_end, GRAY);
 	}
 
-	for(uint8_t r = 0; r < 128; r++) {
+	for(uint8_t r = 0; r < 32; r++) {
 		Vector2 line_start = (Vector2) { 0, r * 64 };
-		Vector2 line_end  = (Vector2) { 64 * 127, r * 64};
+		Vector2 line_end  = (Vector2) { 64 * 31, r * 64};
 		DrawLineV(line_start, line_end, GRAY);
 	}
 
@@ -234,7 +234,6 @@ void PrintComponentMappings(Handler *handler, INT_N entity_id) {
 
 void CheckSelectedUnits(Handler *handler, Rectangle rec) {
 	// Convert window space rectangle to game space
-	//rec = ScaledRec(rec);
 	rec = ScaledRecWithCamera(rec, handler->camera);
 		
 	// Set bit mask to components required for selection
@@ -244,24 +243,18 @@ void CheckSelectedUnits(Handler *handler, Rectangle rec) {
 	for(INT_N i = 0; i < handler->entity_count; i++) {
 		Entity *entity = &handler->entities[i];
 
-		// Skip selecting entities that don't have require components
+		// Skip selecting entities that don't have required components
 		if(!(entity->components & mask)) continue;
 
 		// Get components
-		comp_Selectable *selectable = _pool_selectables_get(entity->comp_map.component_id[1 >> COMP_SELECTABLE]);
 		comp_Transform *transform = _pool_transforms_get(entity->comp_map.component_id[1 >> COMP_TRANSFORM]);
+		comp_Selectable *selectable = _pool_selectables_get(entity->comp_map.component_id[1 >> COMP_SELECTABLE]);
 
 		// Clear selected flag
 		selectable->flags &= ~SELECTED;
 
 		// Set selected flag on if in box
-		/*
 		if(CheckCollisionCircleRec(transform->position, 10, rec)) {
-			selectable->flags |= SELECTED;
-		}
-		*/
-		
-		if(CheckCollisionPointRec(transform->position, rec)) {
 			selectable->flags |= SELECTED;
 		}
 	}

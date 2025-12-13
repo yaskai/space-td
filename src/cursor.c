@@ -4,11 +4,11 @@
 #include "handler.h"
 #include "game.h"
 #include "kmath.h"
+#include <math.h>
 
 void CursorUpdate(Cursor *cursor, Handler *handler, Camera2D *camera, float dt) {
 	// Set world and screen positions
 	cursor->screen_position = GetMousePosition();
-	//cursor->world_position = GetScreenToWorld2D(cursor->screen_position, *camera);
 	cursor->world_position = ScaledVec2WithCamera(cursor->screen_position, camera);
 
 	// On press
@@ -65,7 +65,6 @@ void CursorCameraControls(Cursor *cursor, Camera2D *camera, float dt) {
 	
 	if(IsKeyDown(KEY_A)) key_direction.x--;
 	if(IsKeyDown(KEY_D)) key_direction.x++;
-
 	if(IsKeyDown(KEY_W)) key_direction.y--;
 	if(IsKeyDown(KEY_S)) key_direction.y++;
 
@@ -74,8 +73,9 @@ void CursorCameraControls(Cursor *cursor, Camera2D *camera, float dt) {
 	// Zoom in & out
 	float scroll = GetMouseWheelMove();
 	if(fabsf(scroll) > 0) {
-		camera->zoom += scroll * dt;
-		camera->zoom = Clamp(camera->zoom, 0.1f, 2.0f);
+		float amount = pow(scroll, 7.0f);
+		camera->zoom += (amount) * dt;
+		camera->zoom = Clamp(camera->zoom, 0.5f, 2.0f);
 
 		Vector2 next = ScaledVec2WithCamera(cursor->screen_position, camera);
 
