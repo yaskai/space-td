@@ -41,8 +41,8 @@ Rectangle ScaledRecWithCamera(Rectangle rec, Camera2D *camera) {
 	rec = (Rectangle) {
 		.x = pos.x, 
 		.y = pos.y,
-		.width = size.x,
-		.height = size.y
+		.width = size.x / camera->zoom,
+		.height = size.y / camera->zoom
 	};
 
 	return rec;

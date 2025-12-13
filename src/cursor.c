@@ -8,7 +8,8 @@
 void CursorUpdate(Cursor *cursor, Handler *handler, Camera2D *camera, float dt) {
 	// Set world and screen positions
 	cursor->screen_position = GetMousePosition();
-	cursor->world_position = GetScreenToWorld2D(cursor->screen_position, *camera);
+	//cursor->world_position = GetScreenToWorld2D(cursor->screen_position, *camera);
+	cursor->world_position = ScaledVec2WithCamera(cursor->screen_position, camera);
 
 	// On press
 	if(IsMouseButtonDown(MOUSE_LEFT_BUTTON)) {
