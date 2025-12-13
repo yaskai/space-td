@@ -3,6 +3,7 @@
 #include "cursor.h"
 #include "handler.h"
 #include "game.h"
+#include "kmath.h"
 
 void CursorUpdate(Cursor *cursor, Handler *handler, Camera2D *camera, float dt) {
 	// Set world and screen positions
@@ -14,13 +15,13 @@ void CursorUpdate(Cursor *cursor, Handler *handler, Camera2D *camera, float dt) 
 		// Start selection box setting
 		if(!(cursor->flags & CURSOR_OPEN_SELECTION)) { 
 			cursor->flags |= CURSOR_OPEN_SELECTION;
-			cursor->click_position = cursor->world_position;
+			cursor->click_position = cursor->screen_position;
 			return;
 		}
 
 		// Continue selection box setting 
-		Vector2 box_min = Vector2Min(cursor->click_position, cursor->world_position);	
-		Vector2 box_max = Vector2Max(cursor->click_position, cursor->world_position);	
+		Vector2 box_min = Vector2Min(cursor->click_position, cursor->screen_position);	
+		Vector2 box_max = Vector2Max(cursor->click_position, cursor->screen_position);	
 		Vector2 box_dim = Vector2Subtract(box_max, box_min);
 		
 		// Set rectangle values
@@ -39,18 +40,30 @@ void CursorUpdate(Cursor *cursor, Handler *handler, Camera2D *camera, float dt) 
 
 			CheckSelectedUnits(handler, cursor->selection_rec);
 
-			cursor->selection_rec = (Rectangle){0};
+			cursor->selection_rec = (Rectangle) { 0 };
 			cursor->flags &= ~CURSOR_OPEN_SELECTION;
 		}	
 	}
 }
 
 void CursorDraw(Cursor *cursor) {
-	DrawCircleV(cursor->world_position, 5, SKYBLUE);
+	DrawCircleV(cursor->screen_position, 5, SKYBLUE);
 
 	if(cursor->flags & CURSOR_OPEN_SELECTION) {
 		DrawRectangleRec(cursor->selection_rec, ColorAlpha(RAYWHITE, 0.5f));
 		DrawRectangleLinesEx(cursor->selection_rec, 2, RAYWHITE);
 	}
+}
+
+void CursorCameraControls(Cursor *cursor, Camera2D *camera, float dt) {
+	Vector2 key_direction = Vector2Zero();	
+	
+	if(IsKeyDown(KEY_A)) key_direction.x--;
+	if(IsKeyDown(KEY_D)) key_direction.x++;
+
+	if(IsKeyDown(KEY_W)) key_direction.y--;
+	if(IsKeyDown(KEY_S)) key_direction.y++;
+
+	camera->target = Vector2Add(camera->target, Vector2Scale(key_direction, 1000 * dt));
 }
 

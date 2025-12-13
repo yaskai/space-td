@@ -22,4 +22,6 @@ typedef struct {
 void CursorUpdate(Cursor *cursor, Handler *handler, Camera2D *camera, float dt);
 void CursorDraw(Cursor *cursor);
 
+void CursorCameraControls(Cursor *cursor, Camera2D *camera, float dt);
+
 #endif

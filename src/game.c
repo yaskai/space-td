@@ -11,8 +11,6 @@
 
 Texture2D controls;
 
-int fps = 60;
-
 // Buffer texture game draws to, used for scaling graphics to desired resolution 
 RenderTexture2D render_target;
 
@@ -28,10 +26,8 @@ DrawFunc game_draw_fn[] = { TitleDraw, MainDraw, OverScreenDraw };
 // Initialize data, allocate memory, etc.
 void GameInit(Game *game) {
 	// Initialize config struct and read options from file
-	game->conf = (Config){0};
+	game->conf = (Config) { 0 };
 	ConfigRead(&game->conf, "options.conf");
-
-	fps = game->conf.refresh_rate;
 
 	// Initialize camera
 	game->cam = (Camera2D) {
@@ -42,10 +38,13 @@ void GameInit(Game *game) {
 		.zoom = 1.0f
 	};
 
-	game->cursor = (Cursor){0};
+	// Initialize cursor
+	game->cursor = (Cursor) { 0 };
 
+	// Initialize handler
 	HandlerInit(&game->handler, &game->cam, 0);
 
+	// Start gameplay
 	MainStart(game);
 }
 
@@ -127,6 +126,7 @@ void TitleDraw(Game *game, uint8_t flags) {
 // Main gameplay loop logic
 void MainUpdate(Game *game, float delta_time) {
 	CursorUpdate(&game->cursor, &game->handler, &game->cam, delta_time);
+	CursorCameraControls(&game->cursor, &game->cam, delta_time);
 
 	HandlerUpdate(&game->handler, delta_time);
 }
@@ -136,8 +136,6 @@ void MainDraw(Game *game, uint8_t flags) {
 	BeginMode2D(game->cam);
 	HandlerDraw(&game->handler);
 	EndMode2D();
-
-	//CursorDraw(&game->cursor);
 }
 
 void OverScreenUpdate(Game *game, float delta_time) {

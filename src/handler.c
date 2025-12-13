@@ -50,7 +50,7 @@ void HandlerInit(Handler *handler, Camera2D *camera, float dt) {
 	for(int i = 0; i < 60; i++) { 
 		SpawnEntity( 
 			handler, (comp_Transform) { 
-				.position = (Vector2){ 30 + (i * 30), 800},
+				.position = (Vector2){ 30 + (i * 30), 600},
 				.velocity = (Vector2){ 0, 0 },
 				.scale = 1, 
 				.rotation = 0 
@@ -221,8 +221,9 @@ void PrintComponentMappings(Handler *handler, INT_N entity_id) {
 
 void CheckSelectedUnits(Handler *handler, Rectangle rec) {
 	// Convert window space rectangle to game space
-	rec = ScaledRec(rec);
-
+	//rec = ScaledRec(rec);
+	rec = ScaledRecWithCamera(rec, handler->camera);
+		
 	// Set bit mask to components required for selection
 	uint32_t mask = (COMP_TRANSFORM | COMP_SELECTABLE);
 
