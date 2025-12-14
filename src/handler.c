@@ -35,9 +35,9 @@ void HandlerInit(Handler *handler, Camera2D *camera, float dt) {
 	handler->camera = camera;
 
 	// Initialize spatial grid
-	GridInit(&handler->grid, (Vector2){96, 96}, 16, 16);	
+	GridInit(&handler->grid, (Vector2){96, 96}, 128, 128);	
 
-	for(int i = 0; i < 10; i++) { 
+	for(int i = 0; i < 30; i++) { 
 		SpawnEntity( 
 			handler, (comp_Transform) { 
 				.position = (Vector2){ (128) + (i * 100), 300},
@@ -49,21 +49,6 @@ void HandlerInit(Handler *handler, Camera2D *camera, float dt) {
 		
 		PrintComponentMappings(handler, i);
 	}
-
-	/*
-	for(int i = 0; i < 60; i++) { 
-		SpawnEntity( 
-			handler, (comp_Transform) { 
-				.position = (Vector2){ 30 + (i * 30), 600},
-				.velocity = (Vector2){ 0, 0 },
-				.scale = 1, 
-				.rotation = 0 
-			}
-		);
-		
-		PrintComponentMappings(handler, i);
-	}
-	*/
 }
 
 // Free allocated memory 
@@ -322,31 +307,44 @@ bool IsCellInBounds(int16_t c, int16_t r, Grid *grid) {
 }
 
 void GridRenderDebugView(Grid *grid, Handler *handler) {
-	int16_t camera_col = roundf((handler->camera->target.x / handler->camera->zoom) / grid->cell_size.x) - 2;
-	int16_t camera_row = roundf((handler->camera->target.y / handler->camera->zoom) / grid->cell_size.y) - 2;
+	float z = handler->camera->zoom;
 
-	camera_col = Clamp(camera_col, 0, grid->cols - 1);
-	camera_row = Clamp(camera_row, 0, grid->rows - 1);
-
-	int16_t frame_w = (roundf(VIRTUAL_WIDTH / handler->camera->zoom) / grid->cell_size.x) + 2;
-	int16_t frame_h = (roundf(VIRTUAL_HEIGHT / handler->camera->zoom) / grid->cell_size.y) + 2;
+	int16_t frame_w = ((VIRTUAL_WIDTH) / (grid->cell_size.x)) / z;
+	int16_t frame_h = ((VIRTUAL_HEIGHT) / (grid->cell_size.y) / z);
 	
-	int16_t camera_col_end = camera_col + frame_w;
-	int16_t camera_row_end = camera_row + frame_h;
+	Vector2 cam_pos = GetScreenToWorld2D(Vector2Zero(), *handler->camera);
+	Vector2 cam_end = GetScreenToWorld2D((Vector2){GetScreenWidth(), GetScreenHeight()}, *handler->camera);
 
-	camera_col_end = Clamp(camera_col_end, 0, grid->cols - 1);
-	camera_row_end = Clamp(camera_row_end, 0, grid->rows - 1);
+	int16_t camera_col = cam_pos.x / grid->cell_size.x;
+	int16_t camera_row = cam_pos.y / grid->cell_size.y;
+
+	int16_t camera_col_end = cam_end.x / grid->cell_size.x;
+	int16_t camera_row_end = cam_end.y / grid->cell_size.y;
+
+	camera_col_end = Clamp(camera_col_end, frame_w, grid->cols);
+	camera_row_end = Clamp(camera_row_end, frame_h, grid->rows);
+
+	camera_col = Clamp(camera_col, 0, grid->cols - frame_w);
+	camera_row = Clamp(camera_row, 0, grid->rows - frame_h);
 
 	for(int16_t r = camera_row; r < camera_row_end; r++) {
 		for(int16_t c = camera_col; c < camera_col_end; c++) {
 			Vector2 pos = (Vector2) { .x = c * grid->cell_size.x, .y = r * grid->cell_size.y };
 
-			DrawRectangleLines(pos.x, pos.y, grid->cell_size.x, grid->cell_size.y, GRAY);
+			Color color = DARKGRAY;
 
-			if(IsCellInBounds(c, r, grid)) {
-				GridCell *cell = &grid->cells[GridCoordsToId(c, r, grid)];
-				DrawText(TextFormat("Count: %d", cell->entity_count), pos.x, pos.y, 10, RAYWHITE);
-			}
+			GridCell *cell = &grid->cells[GridCoordsToId(c, r, grid)];
+			if(cell->entity_count > 0) color = RAYWHITE;
+
+			Rectangle rec = (Rectangle) {
+				.x = pos.x,
+				.y = pos.y,
+				.width = grid->cell_size.x,
+				.height = grid->cell_size.y
+			};
+
+			DrawRectangleLinesEx(rec, 1.5f, color);
+			DrawText(TextFormat("Count: %d", cell->entity_count), pos.x + 4, pos.y + 4, 10, color);
 		}
 	}
 }
