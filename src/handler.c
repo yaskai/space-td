@@ -60,8 +60,12 @@ void HandlerInit(Handler *handler, Camera2D *camera, float dt) {
 // Free allocated memory 
 void HandlerClose(Handler *handler) {
 	// Unload entities
-	free(handler->entities);
-	free(handler->selected_entities);
+	if(handler->entities) 
+		free(handler->entities);
+
+	// Unload selected entity indices
+	if(handler->selected_entities)
+		free(handler->selected_entities);
 
 	// Unload spatial grid
 	GridClose(&handler->grid);
@@ -269,6 +273,10 @@ void ProcessCommandInput(Handler *handler, Vector2 point) {
 
 // Initialize spatial grid
 void GridInit(Grid *grid, Vector2 cell_size, uint16_t cols, uint16_t rows) {
+	// Free allocated memory (if any exists) 
+	if(grid->cells) 
+		free(grid->cells);
+
 	Grid new_grid = (Grid) {
 		.cell_size = cell_size,
 		.cols = cols,
@@ -282,7 +290,7 @@ void GridInit(Grid *grid, Vector2 cell_size, uint16_t cols, uint16_t rows) {
 
 // Free memory allocated for spatial grid
 void GridClose(Grid *grid) {
-	free(grid->cells);
+	if(grid->cells) free(grid->cells);
 }
 
 void GridUpdate(Grid *grid, Handler *handler) {
