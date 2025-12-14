@@ -37,10 +37,10 @@ void HandlerInit(Handler *handler, Camera2D *camera, float dt) {
 	// Initialize spatial grid
 	GridInit(&handler->grid, (Vector2){144, 144}, 64, 64);	
 
-	for(int i = 0; i < 60; i++) { 
+	for(int i = 0; i < 10; i++) { 
 		SpawnEntity( 
 			handler, (comp_Transform) { 
-				.position = (Vector2){ 30 + (i * 30), 300},
+				.position = (Vector2){ (144 + 64) + (i * 144), 144},
 				.velocity = (Vector2){ 0, 0 },
 				.scale = 1, 
 				.rotation = 0 
@@ -174,8 +174,7 @@ void TransformsUpdate(Handler *handler, float dt) {
 		comp_Transform *transform = &_pool_transforms.data[i];
 
 		transform->prev_position = transform->position;
-		
-		transform->position.y = 100 * sin(i + time * (1)) + 400;
+		transform->position.y = 20 * sin(i + time * (1)) + 420;
 		//transform->position.y += sin(i + time * (1));
 	}
 }
@@ -281,17 +280,26 @@ void GridUpdate(Grid *grid, Handler *handler) {
 		GridCell *cell_prev = &grid->cells[GridCoordsToId(cell_col_prev, cell_row_prev, grid)];
 
 		// Remove entity from previous cell
-		for(int16_t j = 0; j < cell_prev->entity_count; j++) {
-			if(cell_prev->entities[j] == entity->id) {
+		// 1. Search for entity
+		for(INT_N j = cell_prev->entity_count; j >= 0; j--) {
+			INT_N to_remove = cell_prev->entities[j];
+			
+			if(to_remove == entity->id) {
+				// 2. Compact array
 				for(uint16_t k = j; k < cell_prev->entity_count - 1; k++) {
 					cell_prev->entities[k] = cell_prev->entities[k + 1];
 				}
 
+				// 3. Decrement count
 				cell_prev->entity_count--;
 
 				break;
 			}
 		}
+
+		// Don't add if cell is full 
+		if(cell_curr->entity_count - 1 >= MAX_ENTITIES_PER_CELL) 
+			continue;	
 
 		// Add entity to current cell
 		cell_curr->entities[cell_curr->entity_count++] = entity->id;
