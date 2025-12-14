@@ -129,6 +129,9 @@ typedef struct {
 typedef struct {
 	INT_N entities[MAX_ENTITIES_PER_CELL];
 	INT_N entity_count;
+
+	uint8_t flags;
+
 } GridCell;
 
 typedef struct {

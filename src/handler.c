@@ -35,12 +35,12 @@ void HandlerInit(Handler *handler, Camera2D *camera, float dt) {
 	handler->camera = camera;
 
 	// Initialize spatial grid
-	GridInit(&handler->grid, (Vector2){96, 96}, 128, 128);	
+	GridInit(&handler->grid, (Vector2){128, 128}, 128, 128);	
 
 	for(int i = 0; i < 30; i++) { 
 		SpawnEntity( 
 			handler, (comp_Transform) { 
-				.position = (Vector2){ (128) + (i * 100), 300},
+				.position = (Vector2){ (16) + (i * 32), 300},
 				.velocity = (Vector2){ 0, 0 },
 				.scale = 1, 
 				.rotation = 0 
@@ -160,7 +160,7 @@ void TransformsUpdate(Handler *handler, float dt) {
 		comp_Transform *transform = &_pool_transforms.data[i];
 
 		transform->prev_position = transform->position;
-		transform->position.y = 100 * sin(i + time * (1.5f)) + 420;
+		//transform->position.y = 100 * sin(i + time * (1.5f)) + 420;
 		//transform->position.y += sin(i + time * (1));
 	}
 }
@@ -188,27 +188,41 @@ void PrintComponentMappings(Handler *handler, INT_N entity_id) {
 void CheckSelectedUnits(Handler *handler, Rectangle rec) {
 	// Convert window space rectangle to game space
 	rec = ScaledRecWithCamera(rec, handler->camera);
-		
-	// Set bit mask to components required for selection
+
+	Grid *grid = &handler->grid;
+
+	Vector2 end = (Vector2) { rec.x + rec.width, rec.y + rec.height };
+	
+	int16_t start_x = floor(rec.x / grid->cell_size.x);
+	int16_t start_y = floor(rec.y / grid->cell_size.y);
+
+	int16_t end_x = ceil(end.x / grid->cell_size.x);
+	int16_t end_y = ceil(end.y / grid->cell_size.y);
+
 	uint32_t mask = (COMP_TRANSFORM | COMP_SELECTABLE);
 
-	// Iterate entities
-	for(INT_N i = 0; i < handler->entity_count; i++) {
-		Entity *entity = &handler->entities[i];
+	for(INT_N i = 0; i < _pool_selectables.count; i++) {
+		comp_Selectable *selectable_component = &_pool_selectables.data[i];
+		selectable_component->flags &= ~SELECTED;
+	}
 
-		// Skip selecting entities that don't have required components
-		if(!(entity->components & mask)) continue;
+	for(int16_t r = start_y; r < end_y; r++) {
+		for(int16_t c = start_x; c < end_x; c++) {
 
-		// Get components
-		comp_Transform *transform = _pool_transforms_get(entity->comp_map.component_id[1 >> COMP_TRANSFORM]);
-		comp_Selectable *selectable = _pool_selectables_get(entity->comp_map.component_id[1 >> COMP_SELECTABLE]);
+			GridCell *cell = &grid->cells[GridCoordsToId(c, r, grid)];
 
-		// Clear selected flag
-		selectable->flags &= ~SELECTED;
+			for(INT_N i = 0; i < cell->entity_count; i++) {
+				Entity *entity = &handler->entities[cell->entities[i]];	
 
-		// Set selected flag on if in box
-		if(CheckCollisionCircleRec(transform->position, 10, rec)) {
-			selectable->flags |= SELECTED;
+				if(!(entity->components & mask)) continue;
+
+				comp_Transform *transform = _pool_transforms_get(entity->comp_map.component_id[1 >> COMP_TRANSFORM]);
+				comp_Selectable *selectable = _pool_selectables_get(entity->comp_map.component_id[1 >> COMP_SELECTABLE]);
+				
+				if(!(CheckCollisionCircleRec(transform->position, 10, rec))) continue; 
+
+				selectable->flags |= SELECTED;
+			}
 		}
 	}
 }
@@ -266,18 +280,18 @@ void GridUpdate(Grid *grid, Handler *handler) {
 		GridCell *cell_prev = &grid->cells[GridCoordsToId(cell_col_prev, cell_row_prev, grid)];
 
 		// Remove entity from previous cell
-		// 1. Search for entity
+		// Search for entity
 		for(INT_N j = cell_prev->entity_count; j >= 0; j--) {
 			INT_N to_remove = cell_prev->entities[j];
 			
 			if(to_remove == entity->id) {
-				// 2. Compact array
-				for(uint16_t k = j; k < cell_prev->entity_count - 1; k++) {
+				// Compact array
+				for(uint16_t k = j; k < cell_prev->entity_count - 1; k++) 
 					cell_prev->entities[k] = cell_prev->entities[k + 1];
-				}
 
-				// 3. Decrement count
-				cell_prev->entity_count--;
+				// Decrement count
+				if(cell_prev->entity_count > 0)
+					cell_prev->entity_count--;
 
 				break;
 			}
@@ -300,7 +314,7 @@ bool IsCellInBounds(int16_t c, int16_t r, Grid *grid) {
 	if(c < 0 || r < 0) 
 		return false;	
 
-	if(c >= grid->cols - 1 || r >= grid->rows - 1)
+	if(c > grid->cols - 1 || r > grid->rows - 1)
 		return false;
 
 	return true;
@@ -343,8 +357,11 @@ void GridRenderDebugView(Grid *grid, Handler *handler) {
 				.height = grid->cell_size.y
 			};
 
+			if(cell->flags & 0x01)
+				color = SKYBLUE;
+
 			DrawRectangleLinesEx(rec, 1.5f, color);
-			DrawText(TextFormat("Count: %d", cell->entity_count), pos.x + 4, pos.y + 4, 10, color);
+			DrawText(TextFormat("%d", cell->entity_count), pos.x + 4, pos.y + 4, 10, color);
 		}
 	}
 }
