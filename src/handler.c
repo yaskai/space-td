@@ -191,36 +191,45 @@ void CheckSelectedUnits(Handler *handler, Rectangle rec) {
 
 	Grid *grid = &handler->grid;
 
-	Vector2 end = (Vector2) { rec.x + rec.width, rec.y + rec.height };
-	
+	// Convert selection rectangle's start position to grid coordinates
 	int16_t start_x = floor(rec.x / grid->cell_size.x);
 	int16_t start_y = floor(rec.y / grid->cell_size.y);
 
+	// Convert selection rectangle's end position to grid coordinates
+	Vector2 end = (Vector2) { rec.x + rec.width, rec.y + rec.height };
 	int16_t end_x = ceil(end.x / grid->cell_size.x);
 	int16_t end_y = ceil(end.y / grid->cell_size.y);
 
-	uint32_t mask = (COMP_TRANSFORM | COMP_SELECTABLE);
-
+	// Clear selected flag on components
 	for(INT_N i = 0; i < _pool_selectables.count; i++) {
 		comp_Selectable *selectable_component = &_pool_selectables.data[i];
 		selectable_component->flags &= ~SELECTED;
 	}
 
+	// Set component mask
+	uint32_t mask = (COMP_TRANSFORM | COMP_SELECTABLE);
+
+	// Iterate through grid cells
 	for(int16_t r = start_y; r < end_y; r++) {
 		for(int16_t c = start_x; c < end_x; c++) {
-
+			// Get pointer to cell
 			GridCell *cell = &grid->cells[GridCoordsToId(c, r, grid)];
 
+			// Iterate entities within cell
 			for(INT_N i = 0; i < cell->entity_count; i++) {
 				Entity *entity = &handler->entities[cell->entities[i]];	
 
+				// Skip entites without required components for selection
 				if(!(entity->components & mask)) continue;
 
+				// Get components 
 				comp_Transform *transform = _pool_transforms_get(entity->comp_map.component_id[1 >> COMP_TRANSFORM]);
 				comp_Selectable *selectable = _pool_selectables_get(entity->comp_map.component_id[1 >> COMP_SELECTABLE]);
 				
+				// Skip entities outside of selection box
 				if(!(CheckCollisionCircleRec(transform->position, 10, rec))) continue; 
 
+				// Set selected flag
 				selectable->flags |= SELECTED;
 			}
 		}
