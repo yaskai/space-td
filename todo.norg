@@ -1,0 +1,22 @@
+## TODO ##
+
+
+* Programming
+
+** Unit Selection
+
+** Asteroid Object
+
+** Spatial Partitioning
+
+** Unit Movemement
+*** Free 
+*** Anchored
+
+** Command Queue
+
+** Render System
+*** Draw Requests
+*** Draw List
+
+** Simple UI

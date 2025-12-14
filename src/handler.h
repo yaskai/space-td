@@ -84,12 +84,17 @@ typedef struct {
 
 } Entity;
 
+// ----------------------------------------
+// 			Component Definitions 
+// ----------------------------------------
+//
 // Transform component 
 #define COMP_TRANSFORM B_COMP_TRANSFORM
 typedef struct {
 	Vector2 position;
 	Vector2 velocity;
 	Vector2 scale;
+	Vector2 prev_position;
 
 	float rotation;
 
@@ -114,6 +119,29 @@ typedef struct {
 	uint8_t flags;
 
 } comp_Selectable;
+// ----------------------------------------
+
+// ----------------------------------------
+// 			Spatial Partitioning 
+// ----------------------------------------
+#define MAX_ENTITIES_PER_CELL 128
+
+typedef struct {
+	INT_N entities[MAX_ENTITIES_PER_CELL];
+	INT_N entity_count;
+} GridCell;
+
+typedef struct {
+	GridCell *cells;
+
+	Vector2 cell_size;
+
+	uint16_t cols;
+	uint16_t rows;
+	uint16_t cell_count;
+
+} Grid;
+// ----------------------------------------
 
 // Handler struct 
 // Stores all entity and component data
@@ -122,6 +150,9 @@ typedef struct {
 	// Entity array
 	Entity *entities;
 	
+	// Spatial grid struct
+	Grid grid;
+
 	// Component mapping array	
 	ComponentMap *comp_mappings;
 
@@ -134,6 +165,9 @@ typedef struct {
 
 } Handler;
 
+// ----------------------------------------
+// 		    Component Pool Macros 
+// ----------------------------------------
 #define define_component_pool(_name, _type)	\
 typedef struct {	\
 	_type *data;	\
@@ -166,6 +200,7 @@ typedef struct {	\
 		INT_N comp_id = _pool_##_name##_add(component); \
 		mappings[i] = comp_id;	\
 	}
+// ----------------------------------------
 
 // Initalize handler:
 // Allocate memory for entity and component arrays,
@@ -199,5 +234,14 @@ void PrintComponentMappings(Handler *handler, INT_N entity_id);
 void HandlerLogMessage(Handler *handler, char message[]);
 
 void CheckSelectedUnits(Handler *handler, Rectangle rec);
+
+void GridInit(Grid *grid, Vector2 cell_size, uint16_t cols, uint16_t rows);
+void GridClose(Grid *grid);
+void GridUpdate(Grid *grid, Handler *handler);
+
+int16_t GridCoordsToId(int16_t c, int16_t r, Grid *grid);
+bool IsCellInBounds(int16_t c, int16_t r, Grid *grid);
+
+void GridRenderDebugView(Grid *grid, Handler *handler);
 
 #endif
