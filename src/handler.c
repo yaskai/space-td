@@ -13,11 +13,13 @@
 declare_component_pool(transforms, comp_Transform);
 declare_component_pool(sprites, comp_Sprite);
 declare_component_pool(selectables, comp_Selectable);
+declare_component_pool(moveables, comp_Movable);
 
 char *comp_names[COMP_TYPE_COUNT] = {
 	"transform	",
 	"sprite	",
-	"selectable	"
+	"selectable	",
+	"moveable   ",
 };
 
 void HandlerInit(Handler *handler, Camera2D *camera, float dt) {
@@ -25,6 +27,7 @@ void HandlerInit(Handler *handler, Camera2D *camera, float dt) {
 	_pool_transforms_init();
 	_pool_sprites_init();
 	_pool_selectables_init();
+	_pool_moveables_init();
 
 	// Allocate memory for entities
 	handler->entity_count = 0;
@@ -109,9 +112,10 @@ INT_N AddEntity(Handler *handler, uint32_t components) {
 		switch(mask) {
 			printf("adding %s component...\n", comp_names[i]);
 
-			case COMP_TRANSFORM:	_pool_transforms_bind_to(mappings, i);	break;
-			case COMP_SPRITE:		_pool_sprites_bind_to(mappings, i);		break;
-			case COMP_SELECTABLE:	_pool_selectables_bind_to(mappings, i);	break;
+			case COMP_TRANSFORM:	_pool_transforms_bind_to(mappings, i);		break;
+			case COMP_SPRITE:		_pool_sprites_bind_to(mappings, i);			break;
+			case COMP_SELECTABLE:	_pool_selectables_bind_to(mappings, i);		break;
+			case COMP_MOVABLE:		_pool_moveables_bind_to(mappings, i);		break;
 		}
 	}
 	
@@ -229,7 +233,7 @@ void CheckSelectedUnits(Handler *handler, Rectangle rec) {
 				// Skip entities outside of selection box
 				if(!(CheckCollisionCircleRec(transform->position, 10, rec))) continue; 
 
-				// Set selected flag
+				// Set selected flag on
 				selectable->flags |= SELECTED;
 			}
 		}

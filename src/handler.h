@@ -22,40 +22,39 @@
 #define MESSAGE_CAP			1024
 
 enum COMP_BITS {
-		B_COMP_TRANSFORM		= 0x00000001,
-		B_COMP_SPRITE			= 0x00000002,
-		B_COMP_SELECTABLE		= 0x00000004,
-		B_empty2			 	= 0x00000008,
-		B_empty4			 	= 0x00000010,
-		B_empty5			 	= 0x00000020,
-		B_empty6			 	= 0x00000040,
-		B_empty7			 	= 0x00000080,
-		B_empty8			 	= 0x00000100,
-		B_empty9			 	= 0x00000200,
-		B_empty10			 	= 0x00000400,
-		B_empty11			 	= 0x00000800,
-		B_empty12 				= 0x00001000,
-		B_empty13 				= 0x00002000,
-		B_empty14 				= 0x00004000,
-		B_empty15 				= 0x00008000,
-		B_empty16 				= 0x00010000,
-		B_empty17 				= 0x00020000,
-		B_empty18 				= 0x00040000,
-		B_empty19 				= 0x00080000,
-		B_empty20 				= 0x00100000,
-		B_empty21 				= 0x00200000,
-		B_empty22 				= 0x00400000,
-		B_empty23 				= 0x00800000,
-		B_empty24 				= 0x01000000,
-		B_empty25 				= 0x02000000,
-		B_empty26 				= 0x04000000,
-		B_empty27 				= 0x08000000,
-		B_empty28 				= 0x10000000,
-		B_empty29 				= 0x20000000,
-		B_empty30 				= 0x40000000,
-		B_empty31 				= 0x80000000
+		COMP_TRANSFORM		= 0x00000001,
+		COMP_SPRITE			= 0x00000002,
+		COMP_SELECTABLE		= 0x00000004,
+		COMP_MOVABLE		= 0x00000008,
+		empty4			 	= 0x00000010,
+		empty5			 	= 0x00000020,
+		empty6			 	= 0x00000040,
+		empty7			 	= 0x00000080,
+		empty8			 	= 0x00000100,
+		empty9			 	= 0x00000200,
+		empty10			 	= 0x00000400,
+		empty11			 	= 0x00000800,
+		empty12 			= 0x00001000,
+		empty13 			= 0x00002000,
+		empty14 			= 0x00004000,
+		empty15 			= 0x00008000,
+		empty16 			= 0x00010000,
+		empty17 			= 0x00020000,
+		empty18 			= 0x00040000,
+		empty19 			= 0x00080000,
+		empty20 			= 0x00100000,
+		empty21 			= 0x00200000,
+		empty22 			= 0x00400000,
+		empty23 			= 0x00800000,
+		empty24 			= 0x01000000,
+		empty25 			= 0x02000000,
+		empty26 			= 0x04000000,
+		empty27 			= 0x08000000,
+		empty28 			= 0x10000000,
+		empty29 			= 0x20000000,
+		empty30 			= 0x40000000,
+		empty31 			= 0x80000000
 };
-
 
 // Component mapping struct
 // Has array containining indices of components. 
@@ -89,7 +88,6 @@ typedef struct {
 // ----------------------------------------
 //
 // Transform component 
-#define COMP_TRANSFORM B_COMP_TRANSFORM
 typedef struct {
 	Vector2 position;
 	Vector2 velocity;
@@ -101,7 +99,6 @@ typedef struct {
 } comp_Transform;
 
 // Sprite component
-#define COMP_SPRITE B_COMP_SPRITE
 typedef struct {
 	uint16_t frame;
 	uint16_t sprite_id; 
@@ -113,12 +110,22 @@ typedef struct {
 } comp_Sprite;
 
 // Selectable component
-#define COMP_SELECTABLE B_COMP_SELECTABLE
-#define SELECTED		0x01
+#define SELECTED	0x01
 typedef struct {
 	uint8_t flags;
 
 } comp_Selectable;
+
+// Moveable component
+#define MOVING			0x01	
+#define REACHED_TARGET	0x02
+typedef struct {
+	Vector2 target;
+
+	uint8_t flags;
+	
+} comp_Movable;
+
 // ----------------------------------------
 
 // ----------------------------------------
