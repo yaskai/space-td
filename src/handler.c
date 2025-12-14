@@ -34,6 +34,9 @@ void HandlerInit(Handler *handler, Camera2D *camera, float dt) {
 	handler->entities = calloc(ENTITY_CAP, sizeof(Entity));
 	handler->comp_mappings = calloc(ENTITY_CAP, sizeof(ComponentMap));
 
+	handler->selected_entity_count = 0;
+	handler->selected_entities = calloc(ENTITY_CAP, sizeof(INT_N));
+
 	// Set camera pointer
 	handler->camera = camera;
 
@@ -58,6 +61,9 @@ void HandlerInit(Handler *handler, Camera2D *camera, float dt) {
 void HandlerClose(Handler *handler) {
 	// Unload entities
 	free(handler->entities);
+	free(handler->selected_entities);
+
+	// Unload spatial grid
 	GridClose(&handler->grid);
 
 	// Unload component pools
@@ -110,8 +116,6 @@ INT_N AddEntity(Handler *handler, uint32_t components) {
 		if(!(components & mask)) continue; 
 
 		switch(mask) {
-			printf("adding %s component...\n", comp_names[i]);
-
 			case COMP_TRANSFORM:	_pool_transforms_bind_to(mappings, i);		break;
 			case COMP_SPRITE:		_pool_sprites_bind_to(mappings, i);			break;
 			case COMP_SELECTABLE:	_pool_selectables_bind_to(mappings, i);		break;
@@ -204,6 +208,10 @@ void CheckSelectedUnits(Handler *handler, Rectangle rec) {
 	int16_t end_x = ceil(end.x / grid->cell_size.x);
 	int16_t end_y = ceil(end.y / grid->cell_size.y);
 
+	// Clear current selection
+	// Set count to zero
+	handler->selected_entity_count = 0;
+
 	// Clear selected flag on components
 	for(INT_N i = 0; i < _pool_selectables.count; i++) {
 		comp_Selectable *selectable_component = &_pool_selectables.data[i];
@@ -235,11 +243,31 @@ void CheckSelectedUnits(Handler *handler, Rectangle rec) {
 
 				// Set selected flag on
 				selectable->flags |= SELECTED;
+
+				// Add entity's id to selection array and increment count
+				handler->selected_entities[handler->selected_entity_count++] = entity->id;
 			}
 		}
 	}
 }
 
+void ProcessCommandInput(Handler *handler, Vector2 point) {
+	// Convert point from screen space to world space
+	point = ScaledVec2WithCamera(point, handler->camera);
+
+	// Set component mask
+	uint32_t mask = (COMP_TRANSFORM | COMP_MOVABLE);
+
+	// Iterate selected entities
+	for(INT_N i = 0; i < handler->selected_entity_count; i++) {
+		Entity *entity = &handler->entities[handler->selected_entities[i]];
+
+		// Skip assigning command if entity does not have required componenents 
+		if(!(entity->components & mask)) continue;
+	}
+}
+
+// Initialize spatial grid
 void GridInit(Grid *grid, Vector2 cell_size, uint16_t cols, uint16_t rows) {
 	Grid new_grid = (Grid) {
 		.cell_size = cell_size,
@@ -252,6 +280,7 @@ void GridInit(Grid *grid, Vector2 cell_size, uint16_t cols, uint16_t rows) {
 	*grid = new_grid;
 }
 
+// Free memory allocated for spatial grid
 void GridClose(Grid *grid) {
 	free(grid->cells);
 }

@@ -45,6 +45,10 @@ void CursorUpdate(Cursor *cursor, Handler *handler, Camera2D *camera, float dt) 
 			cursor->flags &= ~CURSOR_OPEN_SELECTION;
 		}	
 	}
+
+	if(IsMouseButtonPressed(MOUSE_RIGHT_BUTTON)) {
+		ProcessCommandInput(handler, cursor->screen_position);
+	}
 }
 
 void CursorDraw(Cursor *cursor) {

@@ -153,12 +153,28 @@ typedef struct {
 } Grid;
 // ----------------------------------------
 
+typedef struct {
+	Vector2 target;
+
+	INT_N unit;
+
+} MoveCommand;
+
+typedef struct {
+	INT_N unit;
+	INT_N target;
+
+} AttackCommand;
+
 // Handler struct 
 // Stores all entity and component data
 // Data is modified with 'ComponentUpdate()' functions
 typedef struct {
 	// Entity array
 	Entity *entities;
+
+	// Selected entity indices array
+	INT_N *selected_entities;
 	
 	// Spatial grid struct
 	Grid grid;
@@ -172,6 +188,9 @@ typedef struct {
 	// Count and capacity for entity array:
 	INT_N entity_count; 
 	INT_N entity_capacity;
+
+	// How many entities are currently in selection
+	INT_N selected_entity_count;
 
 } Handler;
 
@@ -244,6 +263,7 @@ void PrintComponentMappings(Handler *handler, INT_N entity_id);
 void HandlerLogMessage(Handler *handler, char message[]);
 
 void CheckSelectedUnits(Handler *handler, Rectangle rec);
+void ProcessCommandInput(Handler *handler, Vector2 point);
 
 void GridInit(Grid *grid, Vector2 cell_size, uint16_t cols, uint16_t rows);
 void GridClose(Grid *grid);
@@ -255,3 +275,4 @@ bool IsCellInBounds(int16_t c, int16_t r, Grid *grid);
 void GridRenderDebugView(Grid *grid, Handler *handler);
 
 #endif
+
