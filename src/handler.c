@@ -35,12 +35,12 @@ void HandlerInit(Handler *handler, Camera2D *camera, float dt) {
 	handler->camera = camera;
 
 	// Initialize spatial grid
-	GridInit(&handler->grid, (Vector2){144, 144}, 64, 64);	
+	GridInit(&handler->grid, (Vector2){96, 96}, 16, 16);	
 
 	for(int i = 0; i < 10; i++) { 
 		SpawnEntity( 
 			handler, (comp_Transform) { 
-				.position = (Vector2){ (144 + 64) + (i * 144), 144},
+				.position = (Vector2){ (128) + (i * 100), 300},
 				.velocity = (Vector2){ 0, 0 },
 				.scale = 1, 
 				.rotation = 0 
@@ -96,6 +96,7 @@ void HandlerDraw(Handler *handler) {
 		comp_Transform *transform = _pool_transforms_get(ent->comp_map.component_id[1 >> COMP_TRANSFORM]);
 		comp_Sprite *sprite = _pool_sprites_get(ent->comp_map.component_id[1 >> COMP_SPRITE]);
 
+		DrawCircleV(transform->position, 10, ColorAlpha(RAYWHITE, 0.5f));
 		DrawCircleLinesV(transform->position, 10, RAYWHITE);
 
 		if(ent->components & COMP_SELECTABLE) {
@@ -174,7 +175,7 @@ void TransformsUpdate(Handler *handler, float dt) {
 		comp_Transform *transform = &_pool_transforms.data[i];
 
 		transform->prev_position = transform->position;
-		transform->position.y = 20 * sin(i + time * (1)) + 420;
+		transform->position.y = 100 * sin(i + time * (1.5f)) + 420;
 		//transform->position.y += sin(i + time * (1));
 	}
 }
@@ -262,12 +263,12 @@ void GridUpdate(Grid *grid, Handler *handler) {
 		if(Vector2Equals(transform->position, transform->prev_position)) continue;
 
 		// Get transform's current position in grid 
-		int16_t cell_col_curr = fabs(transform->position.x / grid->cell_size.x);
-		int16_t cell_row_curr = fabs(transform->position.y / grid->cell_size.y);
+		int16_t cell_col_curr =(transform->position.x / grid->cell_size.x);
+		int16_t cell_row_curr =(transform->position.y / grid->cell_size.y);
 		
 		// Get transform's previous position in grid 
-		int16_t cell_col_prev = fabs(transform->prev_position.x / grid->cell_size.x);
-		int16_t cell_row_prev = fabs(transform->prev_position.y / grid->cell_size.y);
+		int16_t cell_col_prev = (transform->prev_position.x / grid->cell_size.x);
+		int16_t cell_row_prev = (transform->prev_position.y / grid->cell_size.y);
 
 		// Skip update if entity hasn't changed cells
 		if(cell_col_curr == cell_col_prev && cell_row_curr == cell_row_prev) continue;
@@ -307,7 +308,7 @@ void GridUpdate(Grid *grid, Handler *handler) {
 }
 
 int16_t GridCoordsToId(int16_t c, int16_t r, Grid *grid) {
-	return (int16_t)(c + r * grid->cols);	
+	return (int16_t)(c + r * grid->cols);
 }
 
 bool IsCellInBounds(int16_t c, int16_t r, Grid *grid) {
@@ -321,14 +322,14 @@ bool IsCellInBounds(int16_t c, int16_t r, Grid *grid) {
 }
 
 void GridRenderDebugView(Grid *grid, Handler *handler) {
-	int16_t camera_col = roundf((handler->camera->target.x / handler->camera->zoom) / grid->cell_size.x);
-	int16_t camera_row = roundf((handler->camera->target.y / handler->camera->zoom) / grid->cell_size.y);
+	int16_t camera_col = roundf((handler->camera->target.x / handler->camera->zoom) / grid->cell_size.x) - 2;
+	int16_t camera_row = roundf((handler->camera->target.y / handler->camera->zoom) / grid->cell_size.y) - 2;
 
 	camera_col = Clamp(camera_col, 0, grid->cols - 1);
 	camera_row = Clamp(camera_row, 0, grid->rows - 1);
 
-	int16_t frame_w = (roundf(VIRTUAL_WIDTH / handler->camera->zoom) / grid->cell_size.x) + 1;
-	int16_t frame_h = (roundf(VIRTUAL_HEIGHT / handler->camera->zoom) / grid->cell_size.y) + 1;
+	int16_t frame_w = (roundf(VIRTUAL_WIDTH / handler->camera->zoom) / grid->cell_size.x) + 2;
+	int16_t frame_h = (roundf(VIRTUAL_HEIGHT / handler->camera->zoom) / grid->cell_size.y) + 2;
 	
 	int16_t camera_col_end = camera_col + frame_w;
 	int16_t camera_row_end = camera_row + frame_h;
