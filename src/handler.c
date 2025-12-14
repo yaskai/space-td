@@ -128,42 +128,10 @@ INT_N AddEntity(Handler *handler, uint32_t components) {
 		switch(mask) {
 			printf("adding %s component...\n", comp_names[i]);
 
-			case COMP_TRANSFORM: {
-				// Create empty transform
-				comp_Transform new_transform = (comp_Transform) { 0 };
-
-				// Add transform to pool 
-				INT_N comp_id = _pool_transforms_add(new_transform);
-
-				// Add transform's id to entity component mappings 
-				mappings[i] = comp_id;
-
-			} break;
-
-			case COMP_SPRITE: {
-				// Create empty sprite
-				comp_Sprite new_sprite = (comp_Sprite) { 0 };
-
-				// Add sprite to pool 
-				INT_N comp_id = _pool_sprites_add(new_sprite);
-
-				// Add sprite's id to entity component mappings 
-				mappings[i] = comp_id;
-
-			} break;
-
-			case COMP_SELECTABLE: {
-				// Create empty selectable
-				comp_Selectable new_selectable = (comp_Selectable) { 0 };
-
-				// Add selectable to pool 
-				INT_N comp_id = _pool_selectables_add(new_selectable);
-
-				// Add selectable's id to entity component mappings 
-				mappings[i] = comp_id;
-
-			} break;
-		}	
+			case COMP_TRANSFORM:	_pool_transforms_bind_to(mappings, i);	break;
+			case COMP_SPRITE:		_pool_sprites_bind_to(mappings, i);		break;
+			case COMP_SELECTABLE:	_pool_selectables_bind_to(mappings, i);	break;
+		}
 	}	
 	
 	// Initialize entity struct 

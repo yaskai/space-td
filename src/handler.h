@@ -56,33 +56,6 @@ enum COMP_BITS {
 		B_empty31 				= 0x80000000
 };
 
-#define define_component_pool(_name, _type)	\
-typedef struct {	\
-	_type *data;	\
-	INT_N count;	\
-	INT_N capacity;	\
-} _name;
-
-#define declare_component_pool(_name, _type)	\
-	define_component_pool(_name, _type)	\
-	_name _pool_##_name = (_name) {	\
-		.data = NULL,	\
-		.count = 0,	\
-		.capacity = COMP_CAP,	\
-	};	\
-	void _pool_##_name##_init() { \
-		_pool_##_name.data = calloc(COMP_CAP, sizeof(_type)); \
-	} \
-	INT_N _pool_##_name##_add(_type thing) { \
-		_pool_##_name.data[_pool_##_name.count] = thing;	\
-		return _pool_##_name.count++; \
-	}	\
-	_type* _pool_##_name##_get(INT_N id) { \
-		return &_pool_##_name.data[id]; \
-	} \
-	void _pool_##_name##_free() { \
-		free(_pool_##_name.data);	\
-	}
 
 // Component mapping struct
 // Has array containining indices of components. 
@@ -160,6 +133,39 @@ typedef struct {
 	INT_N entity_capacity;
 
 } Handler;
+
+#define define_component_pool(_name, _type)	\
+typedef struct {	\
+	_type *data;	\
+	INT_N count;	\
+	INT_N capacity;	\
+} _name;
+
+#define declare_component_pool(_name, _type)	\
+	define_component_pool(_name, _type)	\
+	_name _pool_##_name = (_name) {	\
+		.data = NULL,	\
+		.count = 0,	\
+		.capacity = COMP_CAP,	\
+	};	\
+	void _pool_##_name##_init() { \
+		_pool_##_name.data = calloc(COMP_CAP, sizeof(_type)); \
+	} \
+	INT_N _pool_##_name##_add(_type thing) { \
+		_pool_##_name.data[_pool_##_name.count] = thing;	\
+		return _pool_##_name.count++; \
+	}	\
+	_type* _pool_##_name##_get(INT_N id) { \
+		return &_pool_##_name.data[id]; \
+	} \
+	void _pool_##_name##_free() { \
+		free(_pool_##_name.data);	\
+	}	\
+	void _pool_##_name##_bind_to(INT_N *mappings, uint32_t i) {	\
+		_type component = (_type) { 0 }; \
+		INT_N comp_id = _pool_##_name##_add(component); \
+		mappings[i] = comp_id;	\
+	}
 
 // Initalize handler:
 // Allocate memory for entity and component arrays,
