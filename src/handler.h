@@ -8,8 +8,8 @@
 // Type used for indexing/count of entities and components, easy to change if needed
 #define INT_N int16_t
 
-#define ENTITY_CAP 1024
-#define COMP_CAP	512
+#define ENTITY_CAP 	1024
+#define COMP_CAP	1024
 
 // How many component types there are
 #define COMP_TYPE_COUNT 	32
@@ -153,6 +153,7 @@ typedef struct {
 } Grid;
 // ----------------------------------------
 
+#define MOVE_COMMAND_CAP	128
 typedef struct {
 	Vector2 target;
 
@@ -184,6 +185,11 @@ typedef struct {
 
 	// Pointer to camera struct
 	Camera2D *camera;
+
+	// Movement command array
+	MoveCommand *move_commands;
+
+	Vector2 command_marker_position;
 
 	// Count and capacity for entity array:
 	INT_N entity_count; 
@@ -222,7 +228,7 @@ typedef struct {	\
 		return &_pool_##_name.data[id]; \
 	} \
 	void _pool_##_name##_free() { \
-		free(_pool_##_name.data);	\
+		if(_pool_##_name.data) free(_pool_##_name.data);	\
 	}	\
 	void _pool_##_name##_bind_to(INT_N *mappings, uint32_t i) {	\
 		_type component = (_type) { 0 }; \

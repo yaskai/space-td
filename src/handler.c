@@ -74,6 +74,7 @@ void HandlerClose(Handler *handler) {
 	_pool_transforms_free();
 	_pool_sprites_free();
 	_pool_selectables_free();
+	_pool_moveables_free();
 }
 
 void HandlerUpdate(Handler *handler, float dt) {
@@ -105,6 +106,8 @@ void HandlerDraw(Handler *handler) {
 			}
 		}
 	}
+
+	//DrawCircleV(handler->command_marker_position, 5, RED);
 }
 
 INT_N AddEntity(Handler *handler, uint32_t components) {
@@ -148,7 +151,7 @@ INT_N AddEntity(Handler *handler, uint32_t components) {
 // Make, bind and map specified transform component 
 void SpawnEntity(Handler *handler, comp_Transform transform) {
 	// Initialize entity, insert to entity array
-	INT_N id = AddEntity(handler, (COMP_TRANSFORM | COMP_SPRITE | COMP_SELECTABLE));
+	INT_N id = AddEntity(handler, (COMP_TRANSFORM | COMP_SPRITE | COMP_SELECTABLE | COMP_MOVABLE));
 
 	// Get pointer to newly created entity 
 	Entity *spawned_entity = &handler->entities[id];
@@ -235,7 +238,7 @@ void CheckSelectedUnits(Handler *handler, Rectangle rec) {
 			for(INT_N i = 0; i < cell->entity_count; i++) {
 				Entity *entity = &handler->entities[cell->entities[i]];	
 
-				// Skip entites without required components for selection
+				// Skip entities without required components for selection
 				if(!(entity->components & mask)) continue;
 
 				// Get components 
@@ -258,6 +261,8 @@ void CheckSelectedUnits(Handler *handler, Rectangle rec) {
 void ProcessCommandInput(Handler *handler, Vector2 point) {
 	// Convert point from screen space to world space
 	point = ScaledVec2WithCamera(point, handler->camera);
+	
+	handler->command_marker_position = point;
 
 	// Set component mask
 	uint32_t mask = (COMP_TRANSFORM | COMP_MOVABLE);
@@ -348,7 +353,7 @@ void GridUpdate(Grid *grid, Handler *handler) {
 		}
 
 		// Don't add if cell is full 
-		if(cell_curr->entity_count - 1 >= MAX_ENTITIES_PER_CELL) 
+		if(cell_curr->entity_count - 1 > MAX_ENTITIES_PER_CELL) 
 			continue;	
 
 		// Add entity to current cell
