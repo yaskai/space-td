@@ -110,6 +110,7 @@ void HandlerDraw(Handler *handler) {
 	//DrawCircleV(handler->command_marker_position, 5, RED);
 }
 
+// Create a new entity
 INT_N AddEntity(Handler *handler, uint32_t components) {
 	// Initialize component mappings for new entity
 	// By default, all entries map to nothing
@@ -126,7 +127,7 @@ INT_N AddEntity(Handler *handler, uint32_t components) {
 			case COMP_TRANSFORM:	_pool_transforms_bind_to(mappings, i);		break;
 			case COMP_SPRITE:		_pool_sprites_bind_to(mappings, i);			break;
 			case COMP_SELECTABLE:	_pool_selectables_bind_to(mappings, i);		break;
-			case COMP_MOVABLE:		_pool_moveables_bind_to(mappings, i);		break;
+			case COMP_MOVEABLE:		_pool_moveables_bind_to(mappings, i);		break;
 		}
 	}
 	
@@ -147,11 +148,10 @@ INT_N AddEntity(Handler *handler, uint32_t components) {
 	return new_entity.id;
 }
 
-// Create a new entity 
-// Make, bind and map specified transform component 
+// Create a new entity + initialize, bind and map specified transform component 
 void SpawnEntity(Handler *handler, comp_Transform transform) {
 	// Initialize entity, insert to entity array
-	INT_N id = AddEntity(handler, (COMP_TRANSFORM | COMP_SPRITE | COMP_SELECTABLE | COMP_MOVABLE));
+	INT_N id = AddEntity(handler, (COMP_TRANSFORM | COMP_SPRITE | COMP_SELECTABLE | COMP_MOVEABLE));
 
 	// Get pointer to newly created entity 
 	Entity *spawned_entity = &handler->entities[id];
@@ -265,7 +265,7 @@ void ProcessCommandInput(Handler *handler, Vector2 point) {
 	handler->command_marker_position = point;
 
 	// Set component mask
-	uint32_t mask = (COMP_TRANSFORM | COMP_MOVABLE);
+	uint32_t mask = (COMP_TRANSFORM | COMP_MOVEABLE);
 
 	// Iterate selected entities
 	for(INT_N i = 0; i < handler->selected_entity_count; i++) {
