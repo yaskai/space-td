@@ -40,9 +40,13 @@ void HandlerInit(Handler *handler, Camera2D *camera, float dt) {
 	// Set camera pointer
 	handler->camera = camera;
 
-	// Initialize spatial grid
-	GridInit(&handler->grid, (Vector2){128, 128}, 128, 128);	
+	handler->move_command_count = 0;
+	handler->move_commands = calloc(COMMAND_CAP, sizeof(MoveCommand));
 
+	// Initialize spatial grid
+	GridInit(&handler->grid, (Vector2) { 128, 128 }, 128, 128);	
+
+	// Spawn test entities
 	for(int i = 0; i < 30; i++) { 
 		SpawnEntity( 
 			handler, (comp_Transform) { 
@@ -79,6 +83,7 @@ void HandlerClose(Handler *handler) {
 
 void HandlerUpdate(Handler *handler, float dt) {
 	TransformsUpdate(handler, dt);
+	MoveSystemUpdate(handler, dt);
 }
 
 void HandlerDraw(Handler *handler) {
@@ -177,6 +182,8 @@ void TransformsUpdate(Handler *handler, float dt) {
 		transform->prev_position = transform->position;
 		//transform->position.y = 100 * sin(i + time * (1.5f)) + 420;
 		//transform->position.y += sin(i + time * (1));
+
+		transform->position = Vector2Add(transform->position, Vector2Scale(transform->velocity, dt));
 	}
 }
 
@@ -265,7 +272,7 @@ void ProcessCommandInput(Handler *handler, Vector2 point) {
 	handler->command_marker_position = point;
 
 	// Set component mask
-	uint32_t mask = (COMP_TRANSFORM | COMP_MOVEABLE);
+	uint32_t mask = (COMP_TRANSFORM | COMP_SELECTABLE | COMP_MOVEABLE);
 
 	// Iterate selected entities
 	for(INT_N i = 0; i < handler->selected_entity_count; i++) {
@@ -273,6 +280,13 @@ void ProcessCommandInput(Handler *handler, Vector2 point) {
 
 		// Skip assigning command if entity does not have required componenents 
 		if(!(entity->components & mask)) continue;
+
+		printf("adding move commmand [%d]\n", handler->move_command_count);
+
+		handler->move_commands[handler->move_command_count++] = (MoveCommand) {
+			.target = point, 
+			.unit = entity->id
+		}; 
 	}
 }
 
@@ -418,6 +432,17 @@ void GridRenderDebugView(Grid *grid, Handler *handler) {
 			DrawRectangleLinesEx(rec, 1.5f, color);
 			DrawText(TextFormat("%d", cell->entity_count), pos.x + 4, pos.y + 4, 10, color);
 		}
+	}
+}
+
+void MoveSystemUpdate(Handler *handler, float dt) {
+	for(uint16_t i = 0; i < handler->move_command_count; i++) {
+		MoveCommand *command = &handler->move_commands[i];
+		comp_Transform *transform = _pool_transforms_get(command->unit);
+		
+		Vector2 dir = Vector2Normalize(Vector2Subtract(command->target, transform->position));
+
+		transform->velocity = Vector2Scale(dir, 100);
 	}
 }
 

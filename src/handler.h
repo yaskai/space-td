@@ -21,39 +21,39 @@
 // Maximum log message size
 #define MESSAGE_CAP			1024
 
-enum COMP_BITS {
+enum COMP_HEXVALS : uint32_t {
 		COMP_TRANSFORM		= 0x00000001,
 		COMP_SPRITE			= 0x00000002,
 		COMP_SELECTABLE		= 0x00000004,
 		COMP_MOVEABLE		= 0x00000008,
-		empty4			 	= 0x00000010,
-		empty5			 	= 0x00000020,
-		empty6			 	= 0x00000040,
-		empty7			 	= 0x00000080,
-		empty8			 	= 0x00000100,
-		empty9			 	= 0x00000200,
-		empty10			 	= 0x00000400,
-		empty11			 	= 0x00000800,
-		empty12 			= 0x00001000,
-		empty13 			= 0x00002000,
-		empty14 			= 0x00004000,
-		empty15 			= 0x00008000,
-		empty16 			= 0x00010000,
-		empty17 			= 0x00020000,
-		empty18 			= 0x00040000,
-		empty19 			= 0x00080000,
-		empty20 			= 0x00100000,
-		empty21 			= 0x00200000,
-		empty22 			= 0x00400000,
-		empty23 			= 0x00800000,
-		empty24 			= 0x01000000,
-		empty25 			= 0x02000000,
-		empty26 			= 0x04000000,
-		empty27 			= 0x08000000,
-		empty28 			= 0x10000000,
-		empty29 			= 0x20000000,
-		empty30 			= 0x40000000,
-		empty31 			= 0x80000000
+		EMPTY_04		 	= 0x00000010,
+		EMPTY_05		 	= 0x00000020,
+		EMPTY_06		 	= 0x00000040,
+		EMPTY_07		 	= 0x00000080,
+		EMPTY_08		 	= 0x00000100,
+		EMPTY_09		 	= 0x00000200,
+		EMPTY_10		 	= 0x00000400,
+		EMPTY_11		 	= 0x00000800,
+		EMPTY_12 			= 0x00001000,
+		EMPTY_13 			= 0x00002000,
+		EMPTY_14 			= 0x00004000,
+		EMPTY_15 			= 0x00008000,
+		EMPTY_16 			= 0x00010000,
+		EMPTY_17 			= 0x00020000,
+		EMPTY_18 			= 0x00040000,
+		EMPTY_19 			= 0x00080000,
+		EMPTY_20 			= 0x00100000,
+		EMPTY_21 			= 0x00200000,
+		EMPTY_22 			= 0x00400000,
+		EMPTY_23 			= 0x00800000,
+		EMPTY_24 			= 0x01000000,
+		EMPTY_25 			= 0x02000000,
+		EMPTY_26 			= 0x04000000,
+		EMPTY_27 			= 0x08000000,
+		EMPTY_28 			= 0x10000000,
+		EMPTY_29 			= 0x20000000,
+		EMPTY_30 			= 0x40000000,
+		EMPTY_31 			= 0x80000000
 };
 
 // Component mapping struct
@@ -153,7 +153,7 @@ typedef struct {
 } Grid;
 // ----------------------------------------
 
-#define MOVE_COMMAND_CAP	128
+#define COMMAND_CAP	128
 typedef struct {
 	Vector2 target;
 
@@ -188,8 +188,11 @@ typedef struct {
 
 	// Movement command array
 	MoveCommand *move_commands;
+	uint16_t *move_commands_free;
 
 	Vector2 command_marker_position;
+
+	uint16_t move_command_count, move_command_free_count;
 
 	// Count and capacity for entity array:
 	INT_N entity_count; 
@@ -197,6 +200,7 @@ typedef struct {
 
 	// How many entities are currently in selection
 	INT_N selected_entity_count;
+	
 
 } Handler;
 
@@ -279,6 +283,8 @@ int16_t GridCoordsToId(int16_t c, int16_t r, Grid *grid);
 bool IsCellInBounds(int16_t c, int16_t r, Grid *grid);
 
 void GridRenderDebugView(Grid *grid, Handler *handler);
+
+void MoveSystemUpdate(Handler *handler, float dt);
 
 #endif
 
