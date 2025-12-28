@@ -120,9 +120,15 @@ void HandlerDraw(Handler *handler) {
 			}
 		}
 
-		if(i == leader_id) {
-			DrawCircleLinesV(transform->position, 10, RED);
+		if(i == leader_id) DrawCircleLinesV(transform->position, 10, RED);
+
+		if(ent->components & COMP_MOVEABLE) {
+			comp_Movable *mover = _pool_moveables_get(ent->id);
+			
+			if(mover->flags & MOVING)
+				DrawLine(transform->position.x, transform->position.y, mover->target.x, mover->target.y, SKYBLUE);
 		}
+		
 	}
 
 	//DrawCircleV(handler->command_marker_position, 5, RED);
@@ -380,7 +386,7 @@ void ProcessCommandInput(Handler *handler, Vector2 point) {
 		comp_Transform *transform = _pool_transforms_get(entity->id);
 		comp_Movable *mover = _pool_moveables_get(entity->id);
 
-		float offset_amount = 50 + (Vector2Distance(transform->position, leader_pos)) * 0.01f;
+		float offset_amount = 50;
 		Vector2 offset_dir = Vector2Normalize(Vector2Subtract(transform->position, leader_pos));
 		Vector2 offset = Vector2Scale(offset_dir, offset_amount);
 
@@ -551,6 +557,7 @@ void MoveSystemUpdate(Handler *handler, float dt) {
 		if(Vector2Length(movement) <= 1.0f) {
 			mover->flags = (REACHED_TARGET);
 			transform->velocity = Vector2Zero();
+
 			continue;
 		}
 
