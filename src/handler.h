@@ -153,7 +153,7 @@ typedef struct {
 } Grid;
 // ----------------------------------------
 
-#define COMMAND_CAP	128
+#define COMMAND_CAP	32
 typedef struct {
 	Vector2 target;
 
@@ -285,6 +285,8 @@ bool IsCellInBounds(int16_t c, int16_t r, Grid *grid);
 void GridRenderDebugView(Grid *grid, Handler *handler);
 
 void MoveSystemUpdate(Handler *handler, float dt);
+
+void DebugDrawCommandInfo(Handler *handler);
 
 #endif
 

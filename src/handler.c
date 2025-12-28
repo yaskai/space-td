@@ -3,11 +3,17 @@
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
+#include <float.h>
 #include "raylib.h"
 #include "raymath.h"
 #include "handler.h"
 #include "game.h"
 #include "kmath.h"
+
+INT_N leader_id;
+Rectangle unit_box;
+
+Vector2 pmin, pmax, pcen;
 
 // Declare component pools
 declare_component_pool(transforms, comp_Transform);
@@ -42,6 +48,9 @@ void HandlerInit(Handler *handler, Camera2D *camera, float dt) {
 
 	handler->move_command_count = 0;
 	handler->move_commands = calloc(COMMAND_CAP, sizeof(MoveCommand));
+
+	handler->move_command_free_count = COMMAND_CAP;
+	handler->move_commands_free = calloc(COMMAND_CAP, sizeof(uint16_t));
 
 	// Initialize spatial grid
 	GridInit(&handler->grid, (Vector2) { 128, 128 }, 128, 128);	
@@ -110,9 +119,19 @@ void HandlerDraw(Handler *handler) {
 				DrawCircleLinesV(transform->position, 10, SKYBLUE);
 			}
 		}
+
+		if(i == leader_id) {
+			DrawCircleLinesV(transform->position, 10, RED);
+		}
 	}
 
 	//DrawCircleV(handler->command_marker_position, 5, RED);
+
+	DrawRectangleLinesEx(unit_box, 2, RED);
+
+	DrawCircleV(pmin, 2, GREEN);
+	DrawCircleV(pmax, 2, BLUE);
+	DrawCircleV(pcen, 2, YELLOW);
 }
 
 // Create a new entity
@@ -274,6 +293,7 @@ void ProcessCommandInput(Handler *handler, Vector2 point) {
 	// Set component mask
 	uint32_t mask = (COMP_TRANSFORM | COMP_SELECTABLE | COMP_MOVEABLE);
 
+	/*
 	// Iterate selected entities
 	for(INT_N i = 0; i < handler->selected_entity_count; i++) {
 		Entity *entity = &handler->entities[handler->selected_entities[i]];
@@ -281,12 +301,91 @@ void ProcessCommandInput(Handler *handler, Vector2 point) {
 		// Skip assigning command if entity does not have required componenents 
 		if(!(entity->components & mask)) continue;
 
-		printf("adding move commmand [%d]\n", handler->move_command_count);
+		Vector2 offset_dir = Vector2Scale((Vector2) { GetRandomValue(-10, 10), GetRandomValue(-10, 10) }, 0.1f);
+		Vector2 offset = (i > 0) ? Vector2Scale(offset_dir, 50) : Vector2Zero();
 
-		handler->move_commands[handler->move_command_count++] = (MoveCommand) {
-			.target = point, 
-			.unit = entity->id
-		}; 
+		comp_Movable *mover = _pool_moveables_get(entity->id);
+		mover->target = Vector2Add(point, offset);
+		mover->flags = (MOVING);
+	}
+	*/
+	
+	leader_id = -1;
+
+	INT_N leader = handler->selected_entities[0];
+	Vector2 center = _pool_transforms_get(leader)->position;
+	
+	Vector2 pos_min = (Vector2) { 9999, 9999 } ;
+	Vector2 pos_max = Vector2Scale(pos_min, -1);
+
+	for(INT_N i = 0; i < handler->selected_entity_count; i++) {
+		Entity *entity = &handler->entities[handler->selected_entities[i]];
+
+		if(!(entity->components & mask)) continue;
+
+		comp_Transform *transform = _pool_transforms_get(entity->id);
+		
+		pos_min.x = fminf(pos_min.x, transform->position.x);
+		pos_min.y = fminf(pos_min.y, transform->position.y);
+
+		pos_max.x = fmaxf(pos_max.x, transform->position.x);
+		pos_max.y = fmaxf(pos_max.y, transform->position.y);
+	}
+
+	pmin = pos_min;
+	pmax = pos_max;
+
+	float box_w = pos_max.x - pos_min.x; 
+	float box_h = pos_max.y - pos_min.y;
+	center = (Vector2) { pos_min.x + box_w * 0.5f, pos_min.y + box_h * 0.5f }; 
+
+	pcen = center;
+
+	unit_box = (Rectangle) {
+		pos_min.x,
+		pos_min.y,
+		box_w,
+		box_h
+	};
+
+	float high_center_score_val = 9999;
+	INT_N high_center_score_id = leader;
+
+	for(INT_N i = 0; i < handler->selected_entity_count; i++) {
+		Entity *entity = &handler->entities[handler->selected_entities[i]];
+
+		if(!(entity->components & mask)) continue;
+
+		comp_Transform *transform = _pool_transforms_get(entity->id);
+
+		float dist = Vector2Distance(center, transform->position);
+		float score = dist; 
+
+		if(score < high_center_score_val) {
+			high_center_score_val = score;
+			high_center_score_id = entity->id;
+		}
+	}
+
+	leader = high_center_score_id;
+	Vector2 leader_pos = _pool_transforms_get(handler->entities[leader].id)->position;
+
+	leader_id = leader;
+
+	for(INT_N i = 0; i < handler->selected_entity_count; i++) {
+		Entity *entity = &handler->entities[handler->selected_entities[i]];
+
+		if(!(entity->components & mask)) continue;
+
+		comp_Transform *transform = _pool_transforms_get(entity->id);
+		comp_Movable *mover = _pool_moveables_get(entity->id);
+
+		float offset_amount = 50 + (Vector2Distance(transform->position, leader_pos)) * 0.01f;
+		Vector2 offset_dir = Vector2Normalize(Vector2Subtract(transform->position, leader_pos));
+		Vector2 offset = Vector2Scale(offset_dir, offset_amount);
+
+		mover->flags = (MOVING);
+		mover->target = Vector2Add(point, offset);
 	}
 }
 
@@ -436,13 +535,27 @@ void GridRenderDebugView(Grid *grid, Handler *handler) {
 }
 
 void MoveSystemUpdate(Handler *handler, float dt) {
-	for(uint16_t i = 0; i < handler->move_command_count; i++) {
-		MoveCommand *command = &handler->move_commands[i];
-		comp_Transform *transform = _pool_transforms_get(command->unit);
-		
-		Vector2 dir = Vector2Normalize(Vector2Subtract(command->target, transform->position));
+	uint32_t mask = (COMP_TRANSFORM | COMP_MOVEABLE);
 
-		transform->velocity = Vector2Scale(dir, 100);
+	for(INT_N i = 0; i < handler->entity_count; i++) {
+		Entity *entity = &handler->entities[i];
+
+		if(!(entity->components & mask)) continue;
+
+		comp_Transform *transform = _pool_transforms_get(entity->id);
+		comp_Movable *mover = _pool_moveables_get(entity->id); 
+
+		if(!(mover->flags & MOVING)) continue;
+
+		Vector2 movement = Vector2Subtract(mover->target, transform->position);
+		if(Vector2Length(movement) <= 1.0f) {
+			mover->flags = (REACHED_TARGET);
+			transform->velocity = Vector2Zero();
+			continue;
+		}
+
+		transform->velocity = Vector2Scale(Vector2Normalize(movement), 100.0f);	
+		mover->flags = (MOVING);
 	}
 }
 
