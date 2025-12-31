@@ -338,21 +338,12 @@ void ProcessCommandInput(Handler *handler, Vector2 point) {
 		pos_max.y = fmaxf(pos_max.y, transform->position.y);
 	}
 
-	pmin = pos_min;
-	pmax = pos_max;
-
 	float box_w = pos_max.x - pos_min.x; 
 	float box_h = pos_max.y - pos_min.y;
 	center = (Vector2) { pos_min.x + box_w * 0.5f, pos_min.y + box_h * 0.5f }; 
 
-	pcen = center;
-
-	unit_box = (Rectangle) {
-		pos_min.x,
-		pos_min.y,
-		box_w,
-		box_h
-	};
+	pmin = pos_min; pmax = pos_max; pcen = center;
+	unit_box = (Rectangle) { pos_min.x, pos_min.y, box_w, box_h	};
 
 	float high_center_score_val = 9999;
 	INT_N high_center_score_id = leader;
@@ -378,6 +369,7 @@ void ProcessCommandInput(Handler *handler, Vector2 point) {
 
 	leader_id = leader;
 
+
 	for(INT_N i = 0; i < handler->selected_entity_count; i++) {
 		Entity *entity = &handler->entities[handler->selected_entities[i]];
 
@@ -389,6 +381,11 @@ void ProcessCommandInput(Handler *handler, Vector2 point) {
 		float offset_amount = 50;
 		Vector2 offset_dir = Vector2Normalize(Vector2Subtract(transform->position, leader_pos));
 		Vector2 offset = Vector2Scale(offset_dir, offset_amount);
+
+		Vector2 to_point = Vector2Normalize(Vector2Subtract(point, transform->position)); 
+
+		if(Vector2Length(offset_dir) > 0) 
+			offset = Vector2Subtract(offset, Vector2Scale(to_point, offset_amount));
 
 		mover->flags = (MOVING);
 		mover->target = Vector2Add(point, offset);
@@ -485,10 +482,7 @@ int16_t GridCoordsToId(int16_t c, int16_t r, Grid *grid) {
 }
 
 bool IsCellInBounds(int16_t c, int16_t r, Grid *grid) {
-	if(c < 0 || r < 0) 
-		return false;	
-
-	if(c > grid->cols - 1 || r > grid->rows - 1)
+	if( c < 0 || r < 0 || c > grid->cols - 1 || r > grid->rows - 1)
 		return false;
 
 	return true;
@@ -541,19 +535,28 @@ void GridRenderDebugView(Grid *grid, Handler *handler) {
 }
 
 void MoveSystemUpdate(Handler *handler, float dt) {
+	// Set component mask
 	uint32_t mask = (COMP_TRANSFORM | COMP_MOVEABLE);
 
+	// Iterate entities
 	for(INT_N i = 0; i < handler->entity_count; i++) {
+		// Get pointer to entity
 		Entity *entity = &handler->entities[i];
 
+		// Skip iterations of entities without required components (set from mask)
 		if(!(entity->components & mask)) continue;
 
+		// Get component references
 		comp_Transform *transform = _pool_transforms_get(entity->id);
 		comp_Movable *mover = _pool_moveables_get(entity->id); 
 
+		// Skip non-moving entities
 		if(!(mover->flags & MOVING)) continue;
 
+		// Calculate movement vector for direction and distance
 		Vector2 movement = Vector2Subtract(mover->target, transform->position);
+
+		// Stop at target point
 		if(Vector2Length(movement) <= 1.0f) {
 			mover->flags = (REACHED_TARGET);
 			transform->velocity = Vector2Zero();
@@ -561,7 +564,10 @@ void MoveSystemUpdate(Handler *handler, float dt) {
 			continue;
 		}
 
+		// Set velocity
 		transform->velocity = Vector2Scale(Vector2Normalize(movement), 100.0f);	
+
+		// Set move flag to on
 		mover->flags = (MOVING);
 	}
 }

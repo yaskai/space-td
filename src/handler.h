@@ -26,7 +26,7 @@ enum COMP_HEXVALS : uint32_t {
 		COMP_SPRITE			= 0x00000002,
 		COMP_SELECTABLE		= 0x00000004,
 		COMP_MOVEABLE		= 0x00000008,
-		EMPTY_04		 	= 0x00000010,
+		COMP_TURRET			= 0x00000010,
 		EMPTY_05		 	= 0x00000020,
 		EMPTY_06		 	= 0x00000040,
 		EMPTY_07		 	= 0x00000080,
@@ -126,12 +126,28 @@ typedef struct {
 	
 } comp_Movable;
 
+// Turret component
+typedef struct {
+	Vector2 aim_dir; 
+	float cooldown;
+
+	INT_N target_unit;
+
+	uint8_t flags;
+
+} comp_Turret;
+
+// Static geometry component
+typedef struct {
+	
+} comp_StaticGeo;
+
 // ----------------------------------------
 
 // ----------------------------------------
 // 			Spatial Partitioning 
 // ----------------------------------------
-#define MAX_ENTITIES_PER_CELL 128
+#define MAX_ENTITIES_PER_CELL 64
 
 typedef struct {
 	INT_N entities[MAX_ENTITIES_PER_CELL];
