@@ -68,7 +68,10 @@ float AngleSpin(float a, float b, float speed, float dt) {
 	if(fabsf(d) < n)
 		return b;
 
-	return a + copysignf(n, d);
+	float dir = (d < 0) ? -1 : 1;
+	return a + (n * dir);
+
+	//return a + copysignf(n, d);
 }
 
 float AngleDelta(float a, float b) {

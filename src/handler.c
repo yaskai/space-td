@@ -578,11 +578,14 @@ void MoveSystemUpdate(Handler *handler, float dt) {
 		}
 
 		// Set velocity
-		transform->velocity = Vector2Scale(movement, 100.0f);	
+		transform->velocity = Vector2Lerp(transform->velocity, Vector2Scale(movement, 100.0f), dt);	
+
+		if(dist < 200.0f) 
+			transform->velocity = Vector2Lerp(transform->velocity, Vector2Scale(movement, 1.0f), dt);	
 
 		if(fabsf(target_angle - transform->rotation) > 0.1f) {
 			transform->velocity = Vector2Zero();
-			transform->rotation = AngleSpin(transform->rotation, target_angle, 5, dt);
+			transform->rotation = AngleSpin(transform->rotation, target_angle, 2, dt);
 		}
 
 		// Set move flag to on
