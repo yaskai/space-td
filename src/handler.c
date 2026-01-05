@@ -9,11 +9,14 @@
 #include "handler.h"
 #include "game.h"
 #include "kmath.h"
+#include "sprites.h"
 
 INT_N leader_id;
 Rectangle unit_box;
 
 Vector2 pmin, pmax, pcen;
+
+Texture2D ship_tex;
 
 // Declare component pools
 declare_component_pool(transforms, comp_Transform);
@@ -56,18 +59,22 @@ void HandlerInit(Handler *handler, Camera2D *camera, float dt) {
 	GridInit(&handler->grid, (Vector2) { 128, 128 }, 128, 128);	
 
 	// Spawn test entities
-	for(int i = 0; i < 30; i++) { 
+	for(int i = 0; i < 3; i++) { 
 		SpawnEntity( 
 			handler, (comp_Transform) { 
 				.position = (Vector2){ (16) + (i * 32), 300},
 				.velocity = (Vector2){ 0, 0 },
 				.scale = 1, 
-				.rotation = 0 
+				.rotation = 270 * DEG2RAD 
 			}
 		);
 		
 		PrintComponentMappings(handler, i);
 	}
+}
+
+void HandlerLoadContnent(Handler *handler) {
+	handler->test_ss = SpritesheetCreate("ship.png", (Vector2){32, 32});
 }
 
 // Free allocated memory 
@@ -109,8 +116,10 @@ void HandlerDraw(Handler *handler) {
 		comp_Transform *transform = _pool_transforms_get(ent->comp_map.component_id[1 >> COMP_TRANSFORM]);
 		comp_Sprite *sprite = _pool_sprites_get(ent->comp_map.component_id[1 >> COMP_SPRITE]);
 
-		DrawCircleV(transform->position, 10, ColorAlpha(RAYWHITE, 0.5f));
-		DrawCircleLinesV(transform->position, 10, RAYWHITE);
+		//DrawCircleV(transform->position, 10, ColorAlpha(RAYWHITE, 0.5f));
+		//DrawCircleLinesV(transform->position, 10, RAYWHITE);
+
+		DrawSpritePro(&handler->test_ss, 0, transform->position, transform->rotation * RAD2DEG, 1, 0);
 
 		if(ent->components & COMP_SELECTABLE) {
 			comp_Selectable *selectable = _pool_selectables_get(ent->comp_map.component_id[1 >> COMP_SELECTABLE]);
@@ -555,9 +564,13 @@ void MoveSystemUpdate(Handler *handler, float dt) {
 
 		// Calculate movement vector for direction and distance
 		Vector2 movement = Vector2Subtract(mover->target, transform->position);
+		float dist = Vector2Length(movement);
+		movement = Vector2Normalize(movement);
+
+		float target_angle = atan2f(movement.y, movement.x);
 
 		// Stop at target point
-		if(Vector2Length(movement) <= 1.0f) {
+		if(dist <= 1.0f) {
 			mover->flags = (REACHED_TARGET);
 			transform->velocity = Vector2Zero();
 
@@ -565,7 +578,12 @@ void MoveSystemUpdate(Handler *handler, float dt) {
 		}
 
 		// Set velocity
-		transform->velocity = Vector2Scale(Vector2Normalize(movement), 100.0f);	
+		transform->velocity = Vector2Scale(movement, 100.0f);	
+
+		if(fabsf(target_angle - transform->rotation) > 0.1f) {
+			transform->velocity = Vector2Zero();
+			transform->rotation = AngleSpin(transform->rotation, target_angle, 5, dt);
+		}
 
 		// Set move flag to on
 		mover->flags = (MOVING);

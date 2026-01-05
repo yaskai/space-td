@@ -48,3 +48,35 @@ Rectangle ScaledRecWithCamera(Rectangle rec, Camera2D *camera) {
 	return rec;
 };
 
+float AngleLerp(float a, float b, float t) {
+	//t *= 100.0f;
+	float d = b - a;
+
+	if(d >  180) d -= 360;
+	if(d < -180) d += 360;
+
+	return a + (d * t);
+}
+
+float AngleSpin(float a, float b, float speed, float dt) {
+	float d = AngleDelta(a, b);
+
+	if(fabsf(d) < 0.01f)
+		return b;
+
+	float n = speed * dt;
+	if(fabsf(d) < n)
+		return b;
+
+	return a + copysignf(n, d);
+}
+
+float AngleDelta(float a, float b) {
+	float d = fmodf(b - a, 2.0f * PI);
+
+	if(d >  PI) d -= 2.0f * PI;
+	if(d < -PI) d += 2.0f * PI;
+
+	return d;
+}
+

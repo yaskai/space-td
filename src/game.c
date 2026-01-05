@@ -63,6 +63,7 @@ void GameRenderInit(Game *game) {
 
 // Initialize sprite loader struct, load assets
 void GameContentInit(Game *game) {
+	HandlerLoadContnent(&game->handler);
 }
 
 void GameUpdate(Game *game) {

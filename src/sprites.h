@@ -11,16 +11,17 @@
 #define SPR_FLIP_Y	   	0x10
 
 typedef struct {
-	uint8_t id;
+	Texture2D texture;			// Source image
 
-	uint8_t flags;
 	uint16_t frame_count;		// Number of frames
 	uint16_t cols, rows;		// Number of columns and rows
 
 	uint16_t frame_w;			// Frame width
 	uint16_t frame_h;			// Frame height
-	
-	Texture2D texture;			// Source image
+
+	uint8_t id;
+	uint8_t flags;
+
 } Spritesheet;
 
 Spritesheet SpritesheetCreate(char *texture_path, Vector2 frame_dimensions);
@@ -34,16 +35,16 @@ uint8_t FrameIndex(Spritesheet *spritesheet, uint8_t c, uint8_t r);
 Rectangle GetFrameRec(uint8_t idx, Spritesheet *spritesheet);
 
 typedef struct {
-	uint16_t frame_count;		// Total number of frames 
-	uint16_t start_frame;		// Which frame is "zero" or first frame
-	uint16_t cur_frame;			// Which frame should be displayed  
-
-	uint16_t cycles;			// Number of times animation has been completed  
+	Spritesheet *spritesheet; 	// Pointer to spritesheet instance
 
 	float speed;				// Animation speed
 	float timer;				// Timer for switching frames
 
-	Spritesheet *spritesheet; 	// Pointer to spritesheet instance
+	uint16_t frame_count;		// Total number of frames 
+	uint16_t start_frame;		// Which frame is "zero" or first frame
+	uint16_t cur_frame;			// Which frame should be displayed  
+	uint16_t cycles;			// Number of times animation has been completed  
+
 } SpriteAnimation;
 
 SpriteAnimation AnimCreate(Spritesheet *spritesheet, uint8_t start_frame, uint8_t frame_count, float speed);
@@ -53,3 +54,4 @@ void AnimDrawPro(SpriteAnimation *anim, Vector2 position, float rotation, float 
 void AnimReset(SpriteAnimation *anim);
 
 #endif // !SPRITES_H_ 
+

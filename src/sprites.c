@@ -5,12 +5,18 @@
 // Make a spritesheet 
 // texture is split into rectangles based on provided dimensions
 Spritesheet SpritesheetCreate(char *texture_path, Vector2 frame_dimensions) {
+	printf("creating sprite...\n");
+	printf("texture: %s\n", texture_path);
+
 	// Load base texture
+	printf("loading texture...\n");
 	Texture2D texture = LoadTexture(texture_path);
 	if(!IsTextureValid(texture)) {
 		printf("file missing: %s\n", texture_path);	
-		return (Spritesheet){0};
+		return (Spritesheet) { 0 };
 	}
+
+	printf("texture loaded!");
 
 	// Calculate column and row count
 	uint16_t cols = texture.width  / frame_dimensions.x;

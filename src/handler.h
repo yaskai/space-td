@@ -1,6 +1,7 @@
 #include <stddef.h>
 #include <stdint.h>
 #include "raylib.h"
+#include "sprites.h"
 
 #ifndef HANDLER_H_
 #define HANDLER_H_
@@ -69,8 +70,10 @@ typedef struct {
 	// component of type 1 >> 0 has index 99 in it's pool  
 	// so, 1 >> 0 = 0x01 meaning:  
 	// transform component for this mapping is located at transforms[99]
-	INT_N component_id[COMP_TYPE_COUNT];
 	// *
+
+	INT_N component_id[COMP_TYPE_COUNT];
+
 } ComponentMap;
 
 // Base entity struct 
@@ -206,6 +209,8 @@ typedef struct {
 	MoveCommand *move_commands;
 	uint16_t *move_commands_free;
 
+	Spritesheet test_ss;
+
 	Vector2 command_marker_position;
 
 	uint16_t move_command_count, move_command_free_count;
@@ -261,6 +266,8 @@ typedef struct {	\
 // Allocate memory for entity and component arrays,
 // set pointers, defaults, etc.
 void HandlerInit(Handler *handler, Camera2D *camera, float dt);
+
+void HandlerLoadContnent(Handler *handler);
 
 void HandlerClose(Handler *handler);
 

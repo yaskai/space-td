@@ -11,4 +11,8 @@ Rectangle ScaledRec(Rectangle rec);
 Vector2 ScaledVec2WithCamera(Vector2 vec2, Camera2D *camera);
 Rectangle ScaledRecWithCamera(Rectangle rec, Camera2D *camera);
 
+float AngleLerp(float a, float b, float t);
+float AngleSpin(float a, float b, float speed, float dt);
+float AngleDelta(float a, float b);
+
 #endif
